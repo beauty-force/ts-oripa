@@ -1,0 +1,1 @@
+ssh -i C:\Users\KSJ\Downloads\xs336105.key xs336105@xs336105.xsrv.jp -p 10022
