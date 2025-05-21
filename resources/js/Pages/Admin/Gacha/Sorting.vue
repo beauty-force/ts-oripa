@@ -8,7 +8,7 @@
                 <!-- <button @click="shuffle()" class="text-white bg-rose-500 text-sm font-normal py-2 px-3 inline-block rounded">
                     ランダム配置
                 </button> -->
-                <button v-if="!shuffle_mode" type="button" @click="toggle_shuffle(1)"
+                <!-- <button v-if="!shuffle_mode" type="button" @click="toggle_shuffle(1)"
                     :class="{ 'opacity-25': form_shuffle_mode.processing }" :disabled="form_shuffle_mode.processing"
                     class="inline px-10 py-2.5 bg-green-500 border border-transparent rounded-md font-semibold text-xs text-white  tracking-widest hover:bg-green-700 active:bg-green-700 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 mr-2">
                     ランダム設定
@@ -17,7 +17,7 @@
                     :class="{ 'opacity-25': form_shuffle_mode.processing }" :disabled="form_shuffle_mode.processing"
                     class="inline px-10 py-2.5 bg-neutral-500 border border-transparent rounded-md font-semibold text-xs text-white  tracking-widest hover:bg-neutral-700 active:bg-neutral-700 focus:outline-none focus:border-neutral-700 focus:shadow-outline-neutral transition ease-in-out duration-150 mr-2">
                     ランダム設定解除
-                </button>
+                </button> -->
                 <button @click.prevent="submit()" :class="{ 'opacity-25': form.processing }" :disabled="form.processing"
                     class="w-32 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-normal py-2 px-3 inline-block rounded">
                     <div class="inline-block align-middle">
@@ -142,20 +142,20 @@ export default {
                 }
             });
         },
-        shuffle() {
-            this.list = this.list.map(value => ({ value, sort: Math.random() }))
-                .sort((a, b) => a.sort - b.sort)
-                .map(({ value }) => value);
-            this.refresh_list();
-        },
-        toggle_shuffle(mode) {
-            this.form_shuffle_mode.shuffle_mode = mode;
-            this.form_shuffle_mode.post(route('admin.gacha.shuffle_mode'), {
-                onFinish: () => {
+        // shuffle() {
+        //     this.list = this.list.map(value => ({ value, sort: Math.random() }))
+        //         .sort((a, b) => a.sort - b.sort)
+        //         .map(({ value }) => value);
+        //     this.refresh_list();
+        // },
+        // toggle_shuffle(mode) {
+        //     this.form_shuffle_mode.shuffle_mode = mode;
+        //     this.form_shuffle_mode.post(route('admin.gacha.shuffle_mode'), {
+        //         onFinish: () => {
 
-                }
-            });
-        },
+        //         }
+        //     });
+        // },
         toggle_fix(id) {
             let i;
             for (i = 0; i < this.list.length; i++) {
