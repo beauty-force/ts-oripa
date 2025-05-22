@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('access_id');
             $table->tinyInteger('status')->default(0);   // 1- completed(CAPTURED) 2- AUTHENTICATED
             $table->integer('amount')->default(0);
-            $table->string('type')->nullable();
+            $table->string('pay_type')->nullable();
             $table->bigInteger('coupon_id')->nullable();
             $table->timestamps();
         });
