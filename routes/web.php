@@ -231,9 +231,6 @@ Route::group(['prefix'=>'admin', 'middleware' => 'user-access:admin'], function(
     Route::post('/test/point/purchase/paymentExecute', [PaymentController::class, 'paymentExecute'])->name('test.user.point.paymentExecute');
     Route::get('/test/point/purchase_success', [UserController::class, 'purchase_success'])->name('test.purchase_success');
 
-    Route::get('/pages/edit', [AdminController::class, 'page_edit'])->name('admin.page.edit');
-    Route::post('/pages/update', [AdminController::class, 'page_update'])->name('admin.page.update');
-
     // user management
     Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
     Route::get('/users/detail/{id}', [AdminController::class, 'user_detail'])->name('admin.users.detail');

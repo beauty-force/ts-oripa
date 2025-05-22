@@ -6,6 +6,7 @@
 /public/delivery_csv
 /public/images/avatars
 /public/images/banner
+/public/hot
 
 /storage/*.key
 /vendor
