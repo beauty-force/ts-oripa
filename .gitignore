@@ -4,6 +4,8 @@
 /public/images/dp
 /public/images/dp_exchange
 /public/delivery_csv
+/public/images/avatars
+/public/images/banner
 
 /storage/*.key
 /vendor
