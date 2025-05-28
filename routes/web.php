@@ -76,7 +76,7 @@ Route::get('/', [HomeController::class, 'index'])->name('main');
 Route::get('/dp', [HomeController::class, 'dp'])->name('main.dp');
 
 //Route::get('/how_to_use', [HomeController::class, 'how_to_use'])->name('main.how_to_use');
-Route::get('/privacy_police', [HomeController::class, 'privacy_police'])->name('main.privacy_police');
+Route::get('/privacy_policy', [HomeController::class, 'privacy_police'])->name('main.privacy_police');
 Route::get('/terms_conditions', [HomeController::class, 'terms_conditions'])->name('main.terms_conditions');
 //Route::get('/contact_us', [HomeController::class, 'contact_us'])->name('main.contact_us');
 Route::get('/notation_commercial', [HomeController::class, 'notation_commercial'])->name('main.notation_commercial');
