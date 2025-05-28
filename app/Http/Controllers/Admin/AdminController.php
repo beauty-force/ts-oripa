@@ -202,7 +202,7 @@ class AdminController extends Controller
 
         $hide_cat_bar = 1;
 
-        $total_point = User::where('created_at', '>', '2025-03-07')->sum('point');
+        $total_point = User::where('type', 0)->sum('point');
 
         return inertia('Admin/Users/Index', compact('users', 'total', 'search_cond', 'hide_cat_bar', 'total_point'));
     }
