@@ -175,7 +175,7 @@ class AdminController extends Controller
         ->leftJoinSub($purchases, 'purchases', function($join) {
             $join->on('users.id', '=', 'purchases.user_id');
         })
-        ->select('users.id', 'users.name', 'users.email', DB::raw('LPAD(users.phone, 11, "0") as phone'), 'users.status', 'purchases.amount', 'ranks.title as rank', 'users.line_id');
+        ->select('users.id', 'users.name', 'users.email', 'users.point', DB::raw('LPAD(users.phone, 11, "0") as phone'), 'users.status', 'purchases.amount', 'ranks.title as rank', 'users.line_id');
 
         // if ($order_by == 'amount') {
         //     $users = $users->leftJoinSub($purchases, 'purchases', function($join) {

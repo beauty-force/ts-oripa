@@ -21,6 +21,7 @@ class ProfileController extends Controller
      */
     public function edit(Request $request)
     {
+        $line_id = env('LINE_ID');
         $user = auth()->user();
         if ($user->invite_code == null) {
             $user->invite_code = Str::random(8);
@@ -42,6 +43,7 @@ class ProfileController extends Controller
             'invite_url' => 'https://test.ts-oripa.com/register?invitation_code='.$user->invite_code,
             'invite_bonus' => getOption('invite_bonus'),
             'invited_bonus' => getOption('invited_bonus'),
+            'line_link_url' => 'https://line.me/R/ti/p/'.$line_id,
             'line_invite_text' => "✨トレしるオリパからの特別なご招待✨
 
 友達からトレしるオリパへの招待状が届いています！新規登録時に下記の招待コードを入力すると、紹介者とあなたの両方に特典ポイントがプレゼントされます！🎁

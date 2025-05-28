@@ -11,49 +11,53 @@
     "file": "assets/noto-sans-jp-1-400-normal.c4e6140f.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-1-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-3-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-3-400-normal.051cee1b.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-3-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-6-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-6-400-normal.373907fe.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-6-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-5-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-5-400-normal.6054eca2.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-5-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-4-400-normal.woff2": {
     "file": "assets/noto-sans-jp-4-400-normal.6fc402ce.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-4-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-5-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-5-400-normal.6054eca2.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-5-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-7-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-7-400-normal.3ce1a313.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-7-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-11-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-11-400-normal.6354128f.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-11-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-8-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-8-400-normal.1c512d08.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-8-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-3-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-3-400-normal.051cee1b.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-3-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-9-400-normal.woff2": {
     "file": "assets/noto-sans-jp-9-400-normal.01e800dc.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-9-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-6-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-6-400-normal.373907fe.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-6-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-10-400-normal.woff2": {
     "file": "assets/noto-sans-jp-10-400-normal.82aadb24.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-10-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-13-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-13-400-normal.a5c85bcb.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-13-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-8-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-8-400-normal.1c512d08.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-8-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-11-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-11-400-normal.6354128f.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-11-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-7-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-7-400-normal.3ce1a313.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-7-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-12-400-normal.woff2": {
     "file": "assets/noto-sans-jp-12-400-normal.97b68ef2.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-12-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-15-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-15-400-normal.43ab5dc2.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-15-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-13-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-13-400-normal.a5c85bcb.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-13-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-16-400-normal.woff2": {
     "file": "assets/noto-sans-jp-16-400-normal.d98e979a.woff2",
@@ -63,13 +67,17 @@
     "file": "assets/noto-sans-jp-14-400-normal.beef3c5c.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-14-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-15-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-15-400-normal.43ab5dc2.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-15-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-20-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-20-400-normal.98f92d3e.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-20-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-18-400-normal.woff2": {
     "file": "assets/noto-sans-jp-18-400-normal.345a588f.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-18-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-19-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-19-400-normal.78f714e7.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-19-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-17-400-normal.woff2": {
     "file": "assets/noto-sans-jp-17-400-normal.39cd21a1.woff2",
@@ -79,14 +87,6 @@
     "file": "assets/noto-sans-jp-21-400-normal.f7b6192c.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-21-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-20-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-20-400-normal.98f92d3e.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-20-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-19-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-19-400-normal.78f714e7.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-19-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-23-400-normal.woff2": {
     "file": "assets/noto-sans-jp-23-400-normal.120807c7.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-23-400-normal.woff2"
@@ -95,25 +95,29 @@
     "file": "assets/noto-sans-jp-22-400-normal.f61923fd.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-22-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-26-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-26-400-normal.9cf00733.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-26-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-25-400-normal.woff2": {
     "file": "assets/noto-sans-jp-25-400-normal.5258abe1.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-25-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-24-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-24-400-normal.eb4fed79.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-24-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-26-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-26-400-normal.9cf00733.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-26-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-27-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-27-400-normal.0cfe8e73.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-27-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-28-400-normal.woff2": {
     "file": "assets/noto-sans-jp-28-400-normal.ce61a014.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-28-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-27-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-27-400-normal.0cfe8e73.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-27-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-24-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-24-400-normal.eb4fed79.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-24-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-30-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-30-400-normal.49d1ce6c.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-30-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-29-400-normal.woff2": {
     "file": "assets/noto-sans-jp-29-400-normal.ffdfc0e6.woff2",
@@ -127,10 +131,6 @@
     "file": "assets/noto-sans-jp-33-400-normal.0a87a3be.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-33-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-30-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-30-400-normal.49d1ce6c.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-30-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-32-400-normal.woff2": {
     "file": "assets/noto-sans-jp-32-400-normal.3492250c.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-32-400-normal.woff2"
@@ -143,17 +143,13 @@
     "file": "assets/noto-sans-jp-35-400-normal.82ffaa1f.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-35-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-34-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-34-400-normal.8ca80527.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-34-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-37-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-37-400-normal.32252451.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-37-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-38-400-normal.woff2": {
     "file": "assets/noto-sans-jp-38-400-normal.00180576.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-38-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-37-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-37-400-normal.32252451.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-37-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-39-400-normal.woff2": {
     "file": "assets/noto-sans-jp-39-400-normal.249cd8f0.woff2",
@@ -167,21 +163,17 @@
     "file": "assets/noto-sans-jp-40-400-normal.489be6bb.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-40-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-44-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-44-400-normal.7580c206.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-44-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-34-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-34-400-normal.8ca80527.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-34-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-43-400-normal.woff2": {
     "file": "assets/noto-sans-jp-43-400-normal.a285e1b6.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-43-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-42-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-42-400-normal.64cd1a5c.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-42-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-47-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-47-400-normal.678bb1bb.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-47-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-44-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-44-400-normal.7580c206.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-44-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-45-400-normal.woff2": {
     "file": "assets/noto-sans-jp-45-400-normal.2d81492d.woff2",
@@ -190,6 +182,10 @@
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-46-400-normal.woff2": {
     "file": "assets/noto-sans-jp-46-400-normal.e27abead.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-46-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-47-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-47-400-normal.678bb1bb.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-47-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-49-400-normal.woff2": {
     "file": "assets/noto-sans-jp-49-400-normal.4e039f63.woff2",
@@ -203,6 +199,10 @@
     "file": "assets/noto-sans-jp-50-400-normal.6fc21508.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-50-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-42-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-42-400-normal.64cd1a5c.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-42-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-51-400-normal.woff2": {
     "file": "assets/noto-sans-jp-51-400-normal.7274c876.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-51-400-normal.woff2"
@@ -211,57 +211,65 @@
     "file": "assets/noto-sans-jp-52-400-normal.69e8ad7c.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-52-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-54-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-54-400-normal.28e10a45.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-54-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-53-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-53-400-normal.50c76b14.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-53-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-55-400-normal.woff2": {
     "file": "assets/noto-sans-jp-55-400-normal.b33a1c21.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-55-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-53-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-53-400-normal.50c76b14.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-53-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-54-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-54-400-normal.28e10a45.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-54-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-58-400-normal.woff2": {
     "file": "assets/noto-sans-jp-58-400-normal.0cd745dc.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-58-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-56-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-56-400-normal.dcd7ae2d.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-56-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-61-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-61-400-normal.5295b2e2.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-61-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-57-400-normal.woff2": {
     "file": "assets/noto-sans-jp-57-400-normal.4930a40a.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-57-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-59-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-59-400-normal.98a6b18c.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-59-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-60-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-60-400-normal.cba891d0.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-60-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-64-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-64-400-normal.3cd7a8a6.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-64-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-62-400-normal.woff2": {
     "file": "assets/noto-sans-jp-62-400-normal.b11991c7.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-62-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-61-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-61-400-normal.5295b2e2.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-61-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-60-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-60-400-normal.cba891d0.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-60-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-56-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-56-400-normal.dcd7ae2d.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-56-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-63-400-normal.woff2": {
     "file": "assets/noto-sans-jp-63-400-normal.dd628f35.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-63-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-59-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-59-400-normal.98a6b18c.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-59-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-65-400-normal.woff2": {
     "file": "assets/noto-sans-jp-65-400-normal.0175d336.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-65-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-64-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-64-400-normal.3cd7a8a6.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-64-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-68-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-68-400-normal.f26e27d4.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-68-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-67-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-67-400-normal.183815f5.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-67-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-66-400-normal.woff2": {
     "file": "assets/noto-sans-jp-66-400-normal.59e66b26.woff2",
@@ -271,10 +279,6 @@
     "file": "assets/noto-sans-jp-69-400-normal.980d97a9.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-69-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-71-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-71-400-normal.2a3b10b3.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-71-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-70-400-normal.woff2": {
     "file": "assets/noto-sans-jp-70-400-normal.67857f2d.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-70-400-normal.woff2"
@@ -283,9 +287,9 @@
     "file": "assets/noto-sans-jp-72-400-normal.661bfc52.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-72-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-67-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-67-400-normal.183815f5.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-67-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-71-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-71-400-normal.2a3b10b3.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-71-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-73-400-normal.woff2": {
     "file": "assets/noto-sans-jp-73-400-normal.dbda5fb0.woff2",
@@ -295,13 +299,9 @@
     "file": "assets/noto-sans-jp-76-400-normal.b0184efe.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-76-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-68-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-68-400-normal.f26e27d4.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-68-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-74-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-74-400-normal.f79fc3ac.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-74-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-77-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-77-400-normal.95d26c11.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-77-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-75-400-normal.woff2": {
     "file": "assets/noto-sans-jp-75-400-normal.d50af5fc.woff2",
@@ -311,17 +311,21 @@
     "file": "assets/noto-sans-jp-78-400-normal.e5ea4600.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-78-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-77-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-77-400-normal.95d26c11.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-77-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-79-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-79-400-normal.32e1cceb.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-79-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-74-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-74-400-normal.f79fc3ac.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-74-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-80-400-normal.woff2": {
     "file": "assets/noto-sans-jp-80-400-normal.2bdb4382.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-80-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-79-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-79-400-normal.32e1cceb.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-79-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-84-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-84-400-normal.3fed0721.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-84-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-81-400-normal.woff2": {
     "file": "assets/noto-sans-jp-81-400-normal.6aa77ba7.woff2",
@@ -339,65 +343,57 @@
     "file": "assets/noto-sans-jp-86-400-normal.03dcfbce.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-86-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-84-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-84-400-normal.3fed0721.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-84-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-87-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-87-400-normal.d66d036f.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-87-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-85-400-normal.woff2": {
     "file": "assets/noto-sans-jp-85-400-normal.27237dcb.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-85-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-90-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-90-400-normal.078799ac.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-90-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-88-400-normal.woff2": {
     "file": "assets/noto-sans-jp-88-400-normal.aa7715ba.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-88-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-87-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-87-400-normal.d66d036f.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-87-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-92-400-normal.woff2": {
     "file": "assets/noto-sans-jp-92-400-normal.19eecd7c.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-92-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-90-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-90-400-normal.078799ac.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-90-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-89-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-89-400-normal.c8e63b92.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-89-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-93-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-93-400-normal.04237c4a.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-93-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-91-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-91-400-normal.4876db9d.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-91-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-94-400-normal.woff2": {
     "file": "assets/noto-sans-jp-94-400-normal.b9a65b25.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-94-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-91-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-91-400-normal.4876db9d.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-91-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-97-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-97-400-normal.02289257.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-97-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-96-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-96-400-normal.239e5448.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-96-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-93-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-93-400-normal.04237c4a.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-93-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-95-400-normal.woff2": {
     "file": "assets/noto-sans-jp-95-400-normal.16ed2c67.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-95-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-99-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-99-400-normal.880d2495.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-99-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-96-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-96-400-normal.239e5448.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-96-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-98-400-normal.woff2": {
     "file": "assets/noto-sans-jp-98-400-normal.9e23b1e4.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-98-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-97-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-97-400-normal.02289257.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-97-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-99-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-99-400-normal.880d2495.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-99-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-102-400-normal.woff2": {
     "file": "assets/noto-sans-jp-102-400-normal.644d8590.woff2",
@@ -407,73 +403,77 @@
     "file": "assets/noto-sans-jp-100-400-normal.e1af64b7.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-100-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-89-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-89-400-normal.c8e63b92.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-89-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-101-400-normal.woff2": {
     "file": "assets/noto-sans-jp-101-400-normal.7f39c8c6.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-101-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-105-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-105-400-normal.622bb511.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-105-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-104-400-normal.woff2": {
     "file": "assets/noto-sans-jp-104-400-normal.74feff80.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-104-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-106-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-106-400-normal.018cef24.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-106-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-103-400-normal.woff2": {
     "file": "assets/noto-sans-jp-103-400-normal.044586c8.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-103-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-107-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-107-400-normal.ef290280.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-107-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-105-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-105-400-normal.622bb511.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-105-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-108-400-normal.woff2": {
     "file": "assets/noto-sans-jp-108-400-normal.26bee832.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-108-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-110-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-110-400-normal.258818d5.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-110-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-109-400-normal.woff2": {
     "file": "assets/noto-sans-jp-109-400-normal.e7a1d2d2.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-109-400-normal.woff2"
-  },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-113-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-113-400-normal.e60f1e6f.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-113-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-111-400-normal.woff2": {
     "file": "assets/noto-sans-jp-111-400-normal.26ac8257.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-111-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-117-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-117-400-normal.2b2a4951.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-117-400-normal.woff2"
-  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-112-400-normal.woff2": {
     "file": "assets/noto-sans-jp-112-400-normal.a59e1cf4.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-112-400-normal.woff2"
   },
-  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-116-400-normal.woff2": {
-    "file": "assets/noto-sans-jp-116-400-normal.59a63e6e.woff2",
-    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-116-400-normal.woff2"
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-110-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-110-400-normal.258818d5.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-110-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-107-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-107-400-normal.ef290280.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-107-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-115-400-normal.woff2": {
     "file": "assets/noto-sans-jp-115-400-normal.06803c61.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-115-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-106-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-106-400-normal.018cef24.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-106-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-117-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-117-400-normal.2b2a4951.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-117-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-114-400-normal.woff2": {
     "file": "assets/noto-sans-jp-114-400-normal.b34702bf.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-114-400-normal.woff2"
   },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-116-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-116-400-normal.59a63e6e.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-116-400-normal.woff2"
+  },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-118-400-normal.woff2": {
     "file": "assets/noto-sans-jp-118-400-normal.76890ed0.woff2",
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-118-400-normal.woff2"
+  },
+  "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-113-400-normal.woff2": {
+    "file": "assets/noto-sans-jp-113-400-normal.e60f1e6f.woff2",
+    "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-113-400-normal.woff2"
   },
   "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-119-400-normal.woff2": {
     "file": "assets/noto-sans-jp-119-400-normal.b204913c.woff2",
@@ -484,7 +484,7 @@
     "src": "node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-all-400-normal.woff"
   },
   "resources/js/app.js": {
-    "file": "assets/app.a5ef6650.js",
+    "file": "assets/app.389efac5.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
@@ -579,7 +579,7 @@
       "resources/js/Pages/Welcome.vue"
     ],
     "css": [
-      "assets/app.47b8f13d.css"
+      "assets/app.d92fdbb6.css"
     ],
     "assets": [
       "assets/noto-sans-jp-0-400-normal.bfdcb889.woff2",
@@ -706,26 +706,26 @@
     ]
   },
   "resources/js/Pages/Admin/BankPayments.vue": {
-    "file": "assets/BankPayments.85a023e2.js",
+    "file": "assets/BankPayments.944f0cb2.js",
     "src": "resources/js/Pages/Admin/BankPayments.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
-  "_Admin.975d2dc4.js": {
-    "file": "assets/Admin.975d2dc4.js",
+  "_Admin.9bae495a.js": {
+    "file": "assets/Admin.9bae495a.js",
     "imports": [
-      "_useConfirm.4f269b7e.js",
+      "_useConfirm.26fedb87.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
-  "_useConfirm.4f269b7e.js": {
-    "file": "assets/useConfirm.4f269b7e.js",
+  "_useConfirm.26fedb87.js": {
+    "file": "assets/useConfirm.26fedb87.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js"
@@ -738,32 +738,32 @@
     "file": "assets/_plugin-vue_export-helper.cdc0426e.js"
   },
   "resources/js/Pages/Admin/Banner.vue": {
-    "file": "assets/Banner.5e8ebd6a.js",
+    "file": "assets/Banner.52d115d3.js",
     "src": "resources/js/Pages/Admin/Banner.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_ArrowLongUpIcon.79d2d0f9.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_ArrowLongUpIcon.14f8bf53.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
-  "_ArrowLongUpIcon.79d2d0f9.js": {
-    "file": "assets/ArrowLongUpIcon.79d2d0f9.js",
+  "_ArrowLongUpIcon.14f8bf53.js": {
+    "file": "assets/ArrowLongUpIcon.14f8bf53.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Admin/Category/Create.vue": {
-    "file": "assets/Create.913e8070.js",
+    "file": "assets/Create.b05eb8f2.js",
     "src": "resources/js/Pages/Admin/Category/Create.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Category/Edit.vue": {
@@ -775,43 +775,43 @@
     ]
   },
   "resources/js/Pages/Admin/Category/Index.vue": {
-    "file": "assets/Index.0db8ceb2.js",
+    "file": "assets/Index.7a35918b.js",
     "src": "resources/js/Pages/Admin/Category/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_ArrowLongUpIcon.79d2d0f9.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_ArrowLongUpIcon.14f8bf53.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/Coupon/Index.vue": {
-    "file": "assets/Index.9886c6c8.js",
+    "file": "assets/Index.a29a9ca3.js",
     "src": "resources/js/Pages/Admin/Coupon/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/Coupon/New.vue": {
-    "file": "assets/New.c4acc15e.js",
+    "file": "assets/New.9b503571.js",
     "src": "resources/js/Pages/Admin/Coupon/New.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_main.8208578d.js",
+      "_Admin.9bae495a.js",
+      "_main.94d86901.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
+      "_useConfirm.26fedb87.js",
       "_isNativeReflectConstruct.8f2fcece.js"
     ]
   },
-  "_main.8208578d.js": {
-    "file": "assets/main.8208578d.js",
+  "_main.94d86901.js": {
+    "file": "assets/main.94d86901.js",
     "imports": [
       "resources/js/app.js",
       "_isNativeReflectConstruct.8f2fcece.js"
@@ -824,156 +824,156 @@
     "file": "assets/isNativeReflectConstruct.8f2fcece.js"
   },
   "resources/js/Pages/Admin/Delivery/Acquired.vue": {
-    "file": "assets/Acquired.3fc417ff.js",
+    "file": "assets/Acquired.e279fdde.js",
     "src": "resources/js/Pages/Admin/Delivery/Acquired.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_useConfirm.26fedb87.js",
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
-  "_Pagination.8c396fdb.js": {
-    "file": "assets/Pagination.8c396fdb.js",
+  "_Pagination.b4da24c1.js": {
+    "file": "assets/Pagination.b4da24c1.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_useConfirm.4f269b7e.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_useConfirm.26fedb87.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
-  "_ChevronRightIcon.42684b68.js": {
-    "file": "assets/ChevronRightIcon.42684b68.js",
+  "_ChevronRightIcon.86e67104.js": {
+    "file": "assets/ChevronRightIcon.86e67104.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_EllipsisHorizontalIcon.79052669.js": {
-    "file": "assets/EllipsisHorizontalIcon.79052669.js",
+  "_EllipsisHorizontalIcon.de889e55.js": {
+    "file": "assets/EllipsisHorizontalIcon.de889e55.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Admin/Delivery/CSV.vue": {
-    "file": "assets/CSV.f60b9a7a.js",
+    "file": "assets/CSV.2c8b6177.js",
     "src": "resources/js/Pages/Admin/Delivery/CSV.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_useConfirm.4f269b7e.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Delivery/Completed.vue": {
-    "file": "assets/Completed.5b82db03.js",
+    "file": "assets/Completed.f8245750.js",
     "src": "resources/js/Pages/Admin/Delivery/Completed.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_useConfirm.26fedb87.js",
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
   "resources/js/Pages/Admin/Delivery/Index.vue": {
-    "file": "assets/Index.3bab61b5.js",
+    "file": "assets/Index.1d2df948.js",
     "src": "resources/js/Pages/Admin/Delivery/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
   "resources/js/Pages/Admin/DeliveryList.vue": {
-    "file": "assets/DeliveryList.a8530e8f.js",
+    "file": "assets/DeliveryList.db65e460.js",
     "src": "resources/js/Pages/Admin/DeliveryList.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Dp/Create.vue": {
-    "file": "assets/Create.13ec43bb.js",
+    "file": "assets/Create.82da14c9.js",
     "src": "resources/js/Pages/Admin/Dp/Create.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Dp/Edit.vue": {
-    "file": "assets/Edit.a3c1eedc.js",
+    "file": "assets/Edit.ab7e1f1b.js",
     "src": "resources/js/Pages/Admin/Dp/Edit.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Dp/Index.vue": {
-    "file": "assets/Index.1f962edf.js",
+    "file": "assets/Index.8ddab2c6.js",
     "src": "resources/js/Pages/Admin/Dp/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
   "resources/js/Pages/Admin/Gacha/Create.vue": {
-    "file": "assets/Create.429055d5.js",
+    "file": "assets/Create.f75e899c.js",
     "src": "resources/js/Pages/Admin/Gacha/Create.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Gacha/Edit.vue": {
-    "file": "assets/Edit.0e4bdcb4.js",
+    "file": "assets/Edit.c71d5e3b.js",
     "src": "resources/js/Pages/Admin/Gacha/Edit.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_main.8208578d.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js",
+      "_Admin.9bae495a.js",
+      "_main.94d86901.js",
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ExclamationTriangleIcon.5500d395.js",
+      "_ExclamationTriangleIcon.caa02153.js",
       "_isNativeReflectConstruct.8f2fcece.js"
     ]
   },
-  "_index.b4195a7b.js": {
-    "file": "assets/index.b4195a7b.js",
+  "_index.190ca5f8.js": {
+    "file": "assets/index.190ca5f8.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -981,558 +981,563 @@
       "assets/index.680fb22b.css"
     ]
   },
-  "_ExclamationTriangleIcon.5500d395.js": {
-    "file": "assets/ExclamationTriangleIcon.5500d395.js",
+  "_ExclamationTriangleIcon.caa02153.js": {
+    "file": "assets/ExclamationTriangleIcon.caa02153.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Admin/Gacha/Index.vue": {
-    "file": "assets/Index.5e619951.js",
+    "file": "assets/Index.c75a7bad.js",
     "src": "resources/js/Pages/Admin/Gacha/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_GachaCard.5d6d07d7.js",
+      "_Admin.9bae495a.js",
+      "_GachaCard.0cee0cba.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_GachaButtons.5affb7de.js",
-      "_PlayIcon.2fd04212.js"
+      "_useConfirm.26fedb87.js",
+      "_GachaButtons.ae82400c.js",
+      "_PlayIcon.2f4177a0.js"
     ]
   },
-  "_GachaCard.5d6d07d7.js": {
-    "file": "assets/GachaCard.5d6d07d7.js",
+  "_GachaCard.0cee0cba.js": {
+    "file": "assets/GachaCard.0cee0cba.js",
     "imports": [
       "resources/js/app.js",
-      "_GachaButtons.5affb7de.js",
-      "_useConfirm.4f269b7e.js",
+      "_GachaButtons.ae82400c.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_PlayIcon.2fd04212.js"
+      "_PlayIcon.2f4177a0.js"
     ]
   },
-  "_GachaButtons.5affb7de.js": {
-    "file": "assets/GachaButtons.5affb7de.js",
+  "_GachaButtons.ae82400c.js": {
+    "file": "assets/GachaButtons.ae82400c.js",
     "imports": [
       "resources/js/app.js",
-      "_useConfirm.4f269b7e.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_PlayIcon.2fd04212.js"
+      "_PlayIcon.2f4177a0.js"
     ],
     "css": [
       "assets/GachaButtons.e3b0c442.css"
     ]
   },
-  "_PlayIcon.2fd04212.js": {
-    "file": "assets/PlayIcon.2fd04212.js",
+  "_PlayIcon.2f4177a0.js": {
+    "file": "assets/PlayIcon.2f4177a0.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Admin/Gacha/Sorting.vue": {
-    "file": "assets/Sorting.a7e6247a.js",
+    "file": "assets/Sorting.7a115c82.js",
     "src": "resources/js/Pages/Admin/Gacha/Sorting.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_ArrowLongUpIcon.79d2d0f9.js",
+      "_Admin.9bae495a.js",
+      "_ArrowLongUpIcon.14f8bf53.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Index.vue": {
-    "file": "assets/Index.f3c617aa.js",
+    "file": "assets/Index.bb3566e8.js",
     "src": "resources/js/Pages/Admin/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/LostProduct/Index.vue": {
-    "file": "assets/Index.55884fa8.js",
+    "file": "assets/Index.b6a1388a.js",
     "src": "resources/js/Pages/Admin/LostProduct/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
   "resources/js/Pages/Admin/Pages.vue": {
-    "file": "assets/Pages.072d4431.js",
+    "file": "assets/Pages.7e44cccc.js",
     "src": "resources/js/Pages/Admin/Pages.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Plans/Create.vue": {
-    "file": "assets/Create.00333066.js",
+    "file": "assets/Create.c6b33b0f.js",
     "src": "resources/js/Pages/Admin/Plans/Create.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/Plans/Edit.vue": {
-    "file": "assets/Edit.3ae3de29.js",
+    "file": "assets/Edit.1c7a2d76.js",
     "src": "resources/js/Pages/Admin/Plans/Edit.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/Plans/Index.vue": {
-    "file": "assets/Index.e122e400.js",
+    "file": "assets/Index.a88c1fe6.js",
     "src": "resources/js/Pages/Admin/Plans/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/PointCreate.vue": {
-    "file": "assets/PointCreate.f168fe0c.js",
+    "file": "assets/PointCreate.1a28ab0e.js",
     "src": "resources/js/Pages/Admin/PointCreate.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/PointEdit.vue": {
-    "file": "assets/PointEdit.2e794216.js",
+    "file": "assets/PointEdit.7fba7f30.js",
     "src": "resources/js/Pages/Admin/PointEdit.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/PointList.vue": {
-    "file": "assets/PointList.789e12f1.js",
+    "file": "assets/PointList.c7ba0d83.js",
     "src": "resources/js/Pages/Admin/PointList.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/Rank/BonusHistory.vue": {
-    "file": "assets/BonusHistory.a80e1db8.js",
+    "file": "assets/BonusHistory.72a851c2.js",
     "src": "resources/js/Pages/Admin/Rank/BonusHistory.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ],
     "css": [
       "assets/BonusHistory.b0d4479d.css"
     ]
   },
-  "_UserLayout.97e5de01.js": {
-    "file": "assets/UserLayout.97e5de01.js",
+  "_UserLayout.240e538b.js": {
+    "file": "assets/UserLayout.240e538b.js",
     "imports": [
-      "_useConfirm.4f269b7e.js",
+      "_useConfirm.26fedb87.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ],
     "css": [
       "assets/UserLayout.bea71dee.css"
     ]
   },
   "resources/js/Pages/Admin/Rank/BonusSetting.vue": {
-    "file": "assets/BonusSetting.6c07f2d9.js",
+    "file": "assets/BonusSetting.3ead843d.js",
     "src": "resources/js/Pages/Admin/Rank/BonusSetting.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Admin/Rank/Index.vue": {
-    "file": "assets/Index.5013ee23.js",
+    "file": "assets/Index.cea01495.js",
     "src": "resources/js/Pages/Admin/Rank/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Admin/Settings/Index.vue": {
-    "file": "assets/Index.0cb1da4c.js",
+    "file": "assets/Index.b9eb6646.js",
     "src": "resources/js/Pages/Admin/Settings/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js"
+      "_useConfirm.26fedb87.js"
     ]
   },
   "resources/js/Pages/Admin/Users/Detail.vue": {
-    "file": "assets/Detail.1b32277a.js",
+    "file": "assets/Detail.234961c0.js",
     "src": "resources/js/Pages/Admin/Users/Detail.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
+      "_Admin.9bae495a.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_useConfirm.4f269b7e.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_useConfirm.26fedb87.js",
+      "_EllipsisHorizontalIcon.de889e55.js",
+      "_TrashIcon.a8654ae9.js"
     ]
   },
-  "resources/js/Pages/Admin/Users/GachaLog.vue": {
-    "file": "assets/GachaLog.0259c943.js",
-    "src": "resources/js/Pages/Admin/Users/GachaLog.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
-      "_GachaCard.5d6d07d7.js",
-      "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js",
-      "_GachaButtons.5affb7de.js",
-      "_PlayIcon.2fd04212.js"
-    ]
-  },
-  "resources/js/Pages/Admin/Users/Index.vue": {
-    "file": "assets/Index.6a42ab13.js",
-    "src": "resources/js/Pages/Admin/Users/Index.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
-      "_GachaCard.5d6d07d7.js",
-      "_useConfirm.4f269b7e.js",
-      "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js",
-      "_GachaButtons.5affb7de.js",
-      "_PlayIcon.2fd04212.js"
-    ]
-  },
-  "resources/js/Pages/Admin/Users/PurchaseLog.vue": {
-    "file": "assets/PurchaseLog.5ca648bd.js",
-    "src": "resources/js/Pages/Admin/Users/PurchaseLog.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_Pagination.8c396fdb.js",
-      "_GachaCard.5d6d07d7.js",
-      "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js",
-      "_GachaButtons.5affb7de.js",
-      "_PlayIcon.2fd04212.js"
-    ]
-  },
-  "resources/js/Pages/Admin/Videos.vue": {
-    "file": "assets/Videos.b4930b97.js",
-    "src": "resources/js/Pages/Admin/Videos.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
-      "__plugin-vue_export-helper.cdc0426e.js"
-    ]
-  },
-  "resources/js/Pages/Auth/AdminEmailVerify.vue": {
-    "file": "assets/AdminEmailVerify.893d80a7.js",
-    "src": "resources/js/Pages/Auth/AdminEmailVerify.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "_UserLayout.97e5de01.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
-      "resources/js/app.js",
-      "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
-    ]
-  },
-  "_TextInput.911bf68f.js": {
-    "file": "assets/TextInput.911bf68f.js",
+  "_TrashIcon.a8654ae9.js": {
+    "file": "assets/TrashIcon.a8654ae9.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_InputLabel.c6f329e0.js": {
-    "file": "assets/InputLabel.c6f329e0.js",
+  "resources/js/Pages/Admin/Users/GachaLog.vue": {
+    "file": "assets/GachaLog.dbdc6786.js",
+    "src": "resources/js/Pages/Admin/Users/GachaLog.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
+      "_GachaCard.0cee0cba.js",
+      "__plugin-vue_export-helper.cdc0426e.js",
+      "_useConfirm.26fedb87.js",
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js",
+      "_GachaButtons.ae82400c.js",
+      "_PlayIcon.2f4177a0.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Users/Index.vue": {
+    "file": "assets/Index.aa150c16.js",
+    "src": "resources/js/Pages/Admin/Users/Index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
+      "_useConfirm.26fedb87.js",
+      "__plugin-vue_export-helper.cdc0426e.js",
+      "_TrashIcon.a8654ae9.js",
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Users/PurchaseLog.vue": {
+    "file": "assets/PurchaseLog.30bb60aa.js",
+    "src": "resources/js/Pages/Admin/Users/PurchaseLog.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_Admin.9bae495a.js",
+      "_Pagination.b4da24c1.js",
+      "_GachaCard.0cee0cba.js",
+      "__plugin-vue_export-helper.cdc0426e.js",
+      "_useConfirm.26fedb87.js",
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js",
+      "_GachaButtons.ae82400c.js",
+      "_PlayIcon.2f4177a0.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Videos.vue": {
+    "file": "assets/Videos.7d901597.js",
+    "src": "resources/js/Pages/Admin/Videos.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
+      "__plugin-vue_export-helper.cdc0426e.js"
+    ]
+  },
+  "resources/js/Pages/Auth/AdminEmailVerify.vue": {
+    "file": "assets/AdminEmailVerify.5471e54e.js",
+    "src": "resources/js/Pages/Auth/AdminEmailVerify.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_UserLayout.240e538b.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
+      "resources/js/app.js",
+      "__plugin-vue_export-helper.cdc0426e.js",
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
+    ]
+  },
+  "_TextInput.b1afab37.js": {
+    "file": "assets/TextInput.b1afab37.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_InputLabel.4d9c140b.js": {
+    "file": "assets/InputLabel.4d9c140b.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Auth/ConfirmPassword.vue": {
-    "file": "assets/ConfirmPassword.a91f34f4.js",
+    "file": "assets/ConfirmPassword.5534d8cc.js",
     "src": "resources/js/Pages/Auth/ConfirmPassword.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout.2371ca68.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
-      "_PrimaryButton.aeebbd07.js",
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_GuestLayout.a3c9ae59.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
+      "_PrimaryButton.ea9051ca.js",
+      "_ApplicationLogo.291a0b29.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
-  "_GuestLayout.2371ca68.js": {
-    "file": "assets/GuestLayout.2371ca68.js",
+  "_GuestLayout.a3c9ae59.js": {
+    "file": "assets/GuestLayout.a3c9ae59.js",
     "imports": [
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_ApplicationLogo.291a0b29.js",
       "resources/js/app.js"
     ]
   },
-  "_PrimaryButton.aeebbd07.js": {
-    "file": "assets/PrimaryButton.aeebbd07.js",
+  "_PrimaryButton.ea9051ca.js": {
+    "file": "assets/PrimaryButton.ea9051ca.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_ApplicationLogo.c4e5f6b0.js": {
-    "file": "assets/ApplicationLogo.c4e5f6b0.js",
+  "_ApplicationLogo.291a0b29.js": {
+    "file": "assets/ApplicationLogo.291a0b29.js",
     "imports": [
       "__plugin-vue_export-helper.cdc0426e.js",
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Auth/ForgotPassword.vue": {
-    "file": "assets/ForgotPassword.43a1e4ff.js",
+    "file": "assets/ForgotPassword.601998aa.js",
     "src": "resources/js/Pages/Auth/ForgotPassword.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout.2371ca68.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
-      "_PrimaryButton.aeebbd07.js",
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_GuestLayout.a3c9ae59.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
+      "_PrimaryButton.ea9051ca.js",
+      "_ApplicationLogo.291a0b29.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Auth/Login.vue": {
-    "file": "assets/Login.d01f7fad.js",
+    "file": "assets/Login.6b3c6137.js",
     "src": "resources/js/Pages/Auth/Login.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Checkbox.560fd9be.js",
-      "_UserLayout.97e5de01.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
+      "_Checkbox.f0866577.js",
+      "_UserLayout.240e538b.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
-  "_Checkbox.560fd9be.js": {
-    "file": "assets/Checkbox.560fd9be.js",
+  "_Checkbox.f0866577.js": {
+    "file": "assets/Checkbox.f0866577.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/Auth/LoginPhone.vue": {
-    "file": "assets/LoginPhone.1950719b.js",
+    "file": "assets/LoginPhone.3580857a.js",
     "src": "resources/js/Pages/Auth/LoginPhone.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Auth/MyForgotPassword.vue": {
-    "file": "assets/MyForgotPassword.433196ba.js",
+    "file": "assets/MyForgotPassword.a018febf.js",
     "src": "resources/js/Pages/Auth/MyForgotPassword.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_UserLayout.97e5de01.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
-      "_PrimaryButton.aeebbd07.js",
+      "_UserLayout.240e538b.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
+      "_PrimaryButton.ea9051ca.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Auth/MyResetPassword.vue": {
-    "file": "assets/MyResetPassword.74004120.js",
+    "file": "assets/MyResetPassword.143bc4de.js",
     "src": "resources/js/Pages/Auth/MyResetPassword.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Auth/Register.vue": {
-    "file": "assets/Register.c401cd9e.js",
+    "file": "assets/Register.613ff74e.js",
     "src": "resources/js/Pages/Auth/Register.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout.2371ca68.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
-      "_PrimaryButton.aeebbd07.js",
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_GuestLayout.a3c9ae59.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
+      "_PrimaryButton.ea9051ca.js",
+      "_ApplicationLogo.291a0b29.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Auth/RegisterComplete.vue": {
-    "file": "assets/RegisterComplete.b911c28c.js",
+    "file": "assets/RegisterComplete.883dedfa.js",
     "src": "resources/js/Pages/Auth/RegisterComplete.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "resources/js/app.js",
-      "_useConfirm.4f269b7e.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Auth/RegisterEmail.vue": {
-    "file": "assets/RegisterEmail.ecaf5385.js",
+    "file": "assets/RegisterEmail.2b7c4105.js",
     "src": "resources/js/Pages/Auth/RegisterEmail.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Checkbox.560fd9be.js",
-      "_UserLayout.97e5de01.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
+      "_Checkbox.f0866577.js",
+      "_UserLayout.240e538b.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Auth/RegisterPhone.vue": {
-    "file": "assets/RegisterPhone.b18782ea.js",
+    "file": "assets/RegisterPhone.795be6e3.js",
     "src": "resources/js/Pages/Auth/RegisterPhone.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Checkbox.560fd9be.js",
-      "_UserLayout.97e5de01.js",
-      "_TextInput.911bf68f.js",
+      "_Checkbox.f0866577.js",
+      "_UserLayout.240e538b.js",
+      "_TextInput.b1afab37.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Auth/ResetPassword.vue": {
-    "file": "assets/ResetPassword.8eedc20d.js",
+    "file": "assets/ResetPassword.b21dfce0.js",
     "src": "resources/js/Pages/Auth/ResetPassword.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout.2371ca68.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js",
-      "_PrimaryButton.aeebbd07.js",
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_GuestLayout.a3c9ae59.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js",
+      "_PrimaryButton.ea9051ca.js",
+      "_ApplicationLogo.291a0b29.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Auth/VerifyEmail.vue": {
-    "file": "assets/VerifyEmail.22cf0b89.js",
+    "file": "assets/VerifyEmail.0b68f504.js",
     "src": "resources/js/Pages/Auth/VerifyEmail.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_GuestLayout.2371ca68.js",
-      "_PrimaryButton.aeebbd07.js",
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_GuestLayout.a3c9ae59.js",
+      "_PrimaryButton.ea9051ca.js",
+      "_ApplicationLogo.291a0b29.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Dashboard.vue": {
-    "file": "assets/Dashboard.e7036c55.js",
+    "file": "assets/Dashboard.abc86bd9.js",
     "src": "resources/js/Pages/Dashboard.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_ApplicationLogo.c4e5f6b0.js",
+      "_ApplicationLogo.291a0b29.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/Home.vue": {
-    "file": "assets/Home.6507a995.js",
+    "file": "assets/Home.445b6877.js",
     "src": "resources/js/Pages/Home.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_GachaCard.5d6d07d7.js",
+      "_UserLayout.240e538b.js",
+      "_GachaCard.0cee0cba.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js",
-      "_GachaButtons.5affb7de.js",
-      "_PlayIcon.2fd04212.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js",
+      "_GachaButtons.ae82400c.js",
+      "_PlayIcon.2f4177a0.js"
     ]
   },
   "resources/js/Pages/HomeDp.vue": {
-    "file": "assets/HomeDp.86d5b4af.js",
+    "file": "assets/HomeDp.320b84b4.js",
     "src": "resources/js/Pages/HomeDp.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Maintainance.vue": {
-    "file": "assets/Maintainance.d89b9028.js",
+    "file": "assets/Maintainance.61f53104.js",
     "src": "resources/js/Pages/Maintainance.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -1541,433 +1546,434 @@
     ]
   },
   "resources/js/Pages/NoPermissionAccess.vue": {
-    "file": "assets/NoPermissionAccess.35bb8083.js",
+    "file": "assets/NoPermissionAccess.bf1f97cd.js",
     "src": "resources/js/Pages/NoPermissionAccess.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/NoProduct.vue": {
-    "file": "assets/NoProduct.181482c2.js",
+    "file": "assets/NoProduct.73c85a57.js",
     "src": "resources/js/Pages/NoProduct.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Normal/ContactUs.vue": {
-    "file": "assets/ContactUs.2816d91a.js",
+    "file": "assets/ContactUs.f8ddb715.js",
     "src": "resources/js/Pages/Normal/ContactUs.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Normal/HowToUse.vue": {
-    "file": "assets/HowToUse.45df6119.js",
+    "file": "assets/HowToUse.c2987294.js",
     "src": "resources/js/Pages/Normal/HowToUse.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Normal/Page.vue": {
-    "file": "assets/Page.9f32bbe0.js",
+    "file": "assets/Page.11eb3e81.js",
     "src": "resources/js/Pages/Normal/Page.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Normal/Ranking.vue": {
-    "file": "assets/Ranking.f4f4a102.js",
+    "file": "assets/Ranking.39a540e9.js",
     "src": "resources/js/Pages/Normal/Ranking.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Normal/RankingAbout.vue": {
-    "file": "assets/RankingAbout.d6069e19.js",
+    "file": "assets/RankingAbout.a677b31d.js",
     "src": "resources/js/Pages/Normal/RankingAbout.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Normal/StatusEstimate.vue": {
-    "file": "assets/StatusEstimate.f064d243.js",
+    "file": "assets/StatusEstimate.6d28c45f.js",
     "src": "resources/js/Pages/Normal/StatusEstimate.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Profile/Edit.vue": {
-    "file": "assets/Edit.f654b4b5.js",
+    "file": "assets/Edit.75d4a498.js",
     "src": "resources/js/Pages/Profile/Edit.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "resources/js/app.js",
       "resources/js/Pages/Profile/Partials/InviteFriend.vue",
+      "resources/js/Pages/Profile/Partials/LineLink.vue",
       "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
       "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
-      "_useConfirm.4f269b7e.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js"
+      "_index.190ca5f8.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js"
     ]
   },
   "resources/js/Pages/Profile/Partials/InviteFriend.vue": {
-    "file": "assets/InviteFriend.508aa5b4.js",
+    "file": "assets/InviteFriend.6c7b6b5b.js",
     "src": "resources/js/Pages/Profile/Partials/InviteFriend.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_index.b4195a7b.js"
-    ]
-  },
-  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue": {
-    "file": "assets/UpdatePasswordForm.3c38087e.js",
-    "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js"
-    ]
-  },
-  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue": {
-    "file": "assets/UpdateProfileInformationForm.0fdc0dce.js",
-    "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js"
-    ]
-  },
-  "resources/js/Pages/Profile/Partials/DeleteUserForm.vue": {
-    "file": "assets/DeleteUserForm.9cc97d6c.js",
-    "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js",
-      "_TextInput.911bf68f.js",
-      "_InputLabel.c6f329e0.js"
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/Profile/Partials/LineLink.vue": {
-    "file": "assets/LineLink.23a7a9ed.js",
+    "file": "assets/LineLink.59e15d9f.js",
     "src": "resources/js/Pages/Profile/Partials/LineLink.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js"
     ]
   },
+  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue": {
+    "file": "assets/UpdatePasswordForm.81c081b8.js",
+    "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue": {
+    "file": "assets/UpdateProfileInformationForm.d459211a.js",
+    "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/DeleteUserForm.vue": {
+    "file": "assets/DeleteUserForm.c28c0e7e.js",
+    "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_TextInput.b1afab37.js",
+      "_InputLabel.4d9c140b.js"
+    ]
+  },
   "resources/js/Pages/User/Address.vue": {
-    "file": "assets/Address.7c7821ec.js",
+    "file": "assets/Address.c0ee3030.js",
     "src": "resources/js/Pages/User/Address.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Coupon.vue": {
-    "file": "assets/Coupon.4ba3ed41.js",
+    "file": "assets/Coupon.8713e4f0.js",
     "src": "resources/js/Pages/User/Coupon.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Dp/Detail.vue": {
-    "file": "assets/Detail.db88c38c.js",
+    "file": "assets/Detail.9a17873e.js",
     "src": "resources/js/Pages/User/Dp/Detail.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_useConfirm.4f269b7e.js",
+      "_UserLayout.240e538b.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ExclamationTriangleIcon.5500d395.js",
-      "_index.b4195a7b.js"
+      "_ExclamationTriangleIcon.caa02153.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Dp/Success.vue": {
-    "file": "assets/Success.2af0e1f5.js",
+    "file": "assets/Success.1ab23542.js",
     "src": "resources/js/Pages/User/Dp/Success.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Favorite.vue": {
-    "file": "assets/Favorite.d799136c.js",
+    "file": "assets/Favorite.55d99850.js",
     "src": "resources/js/Pages/User/Favorite.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_ChevronRightIcon.86e67104.js",
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Gacha.vue": {
-    "file": "assets/Gacha.54514f85.js",
+    "file": "assets/Gacha.b93d11fd.js",
     "src": "resources/js/Pages/User/Gacha.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
-      "_GachaButtons.5affb7de.js",
-      "_Pagination.8c396fdb.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
+      "_GachaButtons.ae82400c.js",
+      "_Pagination.b4da24c1.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_ExclamationTriangleIcon.5500d395.js",
-      "_PlayIcon.2fd04212.js",
-      "_ChevronRightIcon.42684b68.js",
-      "_EllipsisHorizontalIcon.79052669.js"
+      "_ExclamationTriangleIcon.caa02153.js",
+      "_PlayIcon.2f4177a0.js",
+      "_ChevronRightIcon.86e67104.js",
+      "_EllipsisHorizontalIcon.de889e55.js"
     ]
   },
   "resources/js/Pages/User/GachaEnd.vue": {
-    "file": "assets/GachaEnd.3d2456a3.js",
+    "file": "assets/GachaEnd.f3c2d74d.js",
     "src": "resources/js/Pages/User/GachaEnd.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_GachaButtons.5affb7de.js",
+      "_UserLayout.240e538b.js",
+      "_GachaButtons.ae82400c.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js",
-      "_PlayIcon.2fd04212.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js",
+      "_PlayIcon.2f4177a0.js"
     ]
   },
   "resources/js/Pages/User/Payment/CardPayment.vue": {
-    "file": "assets/CardPayment.19e47317.js",
+    "file": "assets/CardPayment.ee3def42.js",
     "src": "resources/js/Pages/User/Payment/CardPayment.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_useConfirm.4f269b7e.js",
+      "_UserLayout.240e538b.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Payment/Process.vue": {
-    "file": "assets/Process.264cc1d5.js",
+    "file": "assets/Process.1f272e60.js",
     "src": "resources/js/Pages/User/Payment/Process.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_useConfirm.4f269b7e.js",
+      "_UserLayout.240e538b.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Point/Index.vue": {
-    "file": "assets/Index.a9c0c185.js",
+    "file": "assets/Index.ea4ef09d.js",
     "src": "resources/js/Pages/User/Point/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Point/Purchase.vue": {
-    "file": "assets/Purchase.8936cd43.js",
+    "file": "assets/Purchase.3b82d22e.js",
     "src": "resources/js/Pages/User/Point/Purchase.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_Loading.838224e0.js",
-      "_useConfirm.4f269b7e.js",
+      "_UserLayout.240e538b.js",
+      "_Loading.90101ab8.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ]
   },
-  "_Loading.838224e0.js": {
-    "file": "assets/Loading.838224e0.js",
+  "_Loading.90101ab8.js": {
+    "file": "assets/Loading.90101ab8.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/User/Point/Success.vue": {
-    "file": "assets/Success.59265271.js",
+    "file": "assets/Success.640f9334.js",
     "src": "resources/js/Pages/User/Point/Success.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ],
     "css": [
       "assets/Success.b73fbd03.css"
     ]
   },
   "resources/js/Pages/User/Product/Delivered.vue": {
-    "file": "assets/Delivered.6f952bf7.js",
+    "file": "assets/Delivered.a57be27c.js",
     "src": "resources/js/Pages/User/Product/Delivered.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_ProductHeader.ea8c1a31.js",
+      "_UserLayout.240e538b.js",
+      "_ProductHeader.2ca8b5fd.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
-  "_ProductHeader.ea8c1a31.js": {
-    "file": "assets/ProductHeader.ea8c1a31.js",
+  "_ProductHeader.2ca8b5fd.js": {
+    "file": "assets/ProductHeader.2ca8b5fd.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ]
   },
   "resources/js/Pages/User/Product/Index.vue": {
-    "file": "assets/Index.f23aa4fa.js",
+    "file": "assets/Index.46c3c6e0.js",
     "src": "resources/js/Pages/User/Product/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_ProductHeader.ea8c1a31.js",
-      "_useConfirm.4f269b7e.js",
+      "_UserLayout.240e538b.js",
+      "_ProductHeader.2ca8b5fd.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Product/Wait.vue": {
-    "file": "assets/Wait.b0723f48.js",
+    "file": "assets/Wait.83c146da.js",
     "src": "resources/js/Pages/User/Product/Wait.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_ProductHeader.ea8c1a31.js",
+      "_UserLayout.240e538b.js",
+      "_ProductHeader.2ca8b5fd.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Profile.vue": {
-    "file": "assets/Profile.9246a08d.js",
+    "file": "assets/Profile.5591ebce.js",
     "src": "resources/js/Pages/User/Profile.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_PlayIcon.2fd04212.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_PlayIcon.2f4177a0.js",
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Ratel.vue": {
-    "file": "assets/Ratel.7fafa886.js",
+    "file": "assets/Ratel.bfbb7c50.js",
     "src": "resources/js/Pages/User/Ratel.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
+      "_UserLayout.240e538b.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_useConfirm.4f269b7e.js",
-      "_index.b4195a7b.js"
+      "_useConfirm.26fedb87.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Result.vue": {
-    "file": "assets/Result.fa3371ac.js",
+    "file": "assets/Result.1c97cce2.js",
     "src": "resources/js/Pages/User/Result.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_useConfirm.4f269b7e.js",
+      "_UserLayout.240e538b.js",
+      "_useConfirm.26fedb87.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_PlayIcon.2fd04212.js",
-      "_index.b4195a7b.js"
+      "_PlayIcon.2f4177a0.js",
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Subscription/Index.vue": {
-    "file": "assets/Index.4ab8a347.js",
+    "file": "assets/Index.1a06da10.js",
     "src": "resources/js/Pages/User/Subscription/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_UserLayout.97e5de01.js",
-      "_useConfirm.4f269b7e.js",
-      "_Loading.838224e0.js",
+      "_UserLayout.240e538b.js",
+      "_useConfirm.26fedb87.js",
+      "_Loading.90101ab8.js",
       "__plugin-vue_export-helper.cdc0426e.js",
-      "_index.b4195a7b.js"
+      "_index.190ca5f8.js"
     ]
   },
   "resources/js/Pages/User/Video.vue": {
-    "file": "assets/Video.7563804b.js",
+    "file": "assets/Video.5863d872.js",
     "src": "resources/js/Pages/User/Video.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Admin.975d2dc4.js",
-      "_useConfirm.4f269b7e.js",
+      "_Admin.9bae495a.js",
+      "_useConfirm.26fedb87.js",
       "_isNativeReflectConstruct.8f2fcece.js",
       "__plugin-vue_export-helper.cdc0426e.js"
     ],
@@ -1976,7 +1982,7 @@
     ]
   },
   "resources/js/Pages/Welcome.vue": {
-    "file": "assets/Welcome.4d53d073.js",
+    "file": "assets/Welcome.639139bc.js",
     "src": "resources/js/Pages/Welcome.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -1984,39 +1990,39 @@
     ]
   },
   "resources/js/app.css": {
-    "file": "assets/app.47b8f13d.css",
+    "file": "assets/app.d92fdbb6.css",
     "src": "resources/js/app.css"
-  },
-  "useConfirm.css": {
-    "file": "assets/useConfirm.5ddf5bd2.css",
-    "src": "useConfirm.css"
-  },
-  "GachaButtons.css": {
-    "file": "assets/GachaButtons.e3b0c442.css",
-    "src": "GachaButtons.css"
-  },
-  "resources/js/Pages/User/Point/Success.css": {
-    "file": "assets/Success.b73fbd03.css",
-    "src": "resources/js/Pages/User/Point/Success.css"
   },
   "resources/js/Pages/Admin/Rank/BonusHistory.css": {
     "file": "assets/BonusHistory.b0d4479d.css",
     "src": "resources/js/Pages/Admin/Rank/BonusHistory.css"
   },
-  "index.css": {
-    "file": "assets/index.680fb22b.css",
-    "src": "index.css"
+  "useConfirm.css": {
+    "file": "assets/useConfirm.5ddf5bd2.css",
+    "src": "useConfirm.css"
   },
-  "main.css": {
-    "file": "assets/main.c9ccb0d9.css",
-    "src": "main.css"
+  "resources/js/Pages/User/Point/Success.css": {
+    "file": "assets/Success.b73fbd03.css",
+    "src": "resources/js/Pages/User/Point/Success.css"
   },
   "UserLayout.css": {
     "file": "assets/UserLayout.bea71dee.css",
     "src": "UserLayout.css"
   },
+  "index.css": {
+    "file": "assets/index.680fb22b.css",
+    "src": "index.css"
+  },
   "resources/js/Pages/User/Video.css": {
     "file": "assets/Video.eebd61ec.css",
     "src": "resources/js/Pages/User/Video.css"
+  },
+  "GachaButtons.css": {
+    "file": "assets/GachaButtons.e3b0c442.css",
+    "src": "GachaButtons.css"
+  },
+  "main.css": {
+    "file": "assets/main.c9ccb0d9.css",
+    "src": "main.css"
   }
 }

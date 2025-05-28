@@ -51,7 +51,7 @@ class GachaController extends Controller
         $thumbnail = saveImage('images/gacha/thumbnail', $request->file('thumbnail'), false);
         $data = [
             'point' => $request->point,
-            // 'consume_point' => $request->point,
+            'consume_point' => $request->point,
             'count_card' => $request->count_card,
             // 'lost_product_type' => $request->lost_product_type,
             'thumbnail' => $thumbnail,
