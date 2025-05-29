@@ -151,10 +151,10 @@ Route::group(['prefix'=>'user', 'middleware' => 'user-access:user'], function(){
     Route::get('/error', [UserController::class, 'noProduct'])->name('user.error');
 
     // Subscription management routes
-    Route::get('/subscription', [SubscriptionController::class, 'index'])->name('user.subscription.index');
-    Route::post('/subscription/{plan}', [SubscriptionController::class, 'subscribe'])->name('user.subscription.subscribe');
-    Route::post('/subscription/{subscription}/update', [SubscriptionController::class, 'update'])->name('user.subscription.update');
-    Route::post('/subscription/{subscription}/cancel', [SubscriptionController::class, 'cancel'])->name('user.subscription.cancel');
+    // Route::get('/subscription', [SubscriptionController::class, 'index'])->name('user.subscription.index');
+    // Route::post('/subscription/{plan}', [SubscriptionController::class, 'subscribe'])->name('user.subscription.subscribe');
+    // Route::post('/subscription/{subscription}/update', [SubscriptionController::class, 'update'])->name('user.subscription.update');
+    // Route::post('/subscription/{subscription}/cancel', [SubscriptionController::class, 'cancel'])->name('user.subscription.cancel');
 });
 
 Route::group(['prefix'=>'admin', 'middleware' => 'user-access:admin'], function(){
