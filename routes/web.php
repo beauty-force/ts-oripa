@@ -33,7 +33,7 @@ use Illuminate\Support\Facades\Session;
 
 use \App\Http\Controllers\LineAccountController;
 use \App\Http\Controllers\Admin\PlanController;
-use \App\Http\Controllers\User\SubscriptionController;
+// use \App\Http\Controllers\User\SubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
