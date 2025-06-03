@@ -242,6 +242,9 @@ Route::group(['prefix'=>'admin', 'middleware' => 'user-access:admin'], function(
 
     Route::get('/admin/users/export', [AdminController::class, 'exportUsers'])->name('admin.users.export');
 
+    Route::get('/pages/edit', [AdminController::class, 'page_edit'])->name('admin.page.edit');
+    Route::post('/pages/update', [AdminController::class, 'page_update'])->name('admin.page.update');
+
 });
 
 Route::group(['prefix'=>'admin', 'middleware' => 'user-access:staff'], function(){

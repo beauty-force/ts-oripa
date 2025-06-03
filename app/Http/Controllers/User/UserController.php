@@ -213,11 +213,7 @@ class UserController extends Controller
         $id = $request->id;
         $number = $request->number;
         $gacha = Gacha::find($id);
-        if ($gacha->rank_limit == -1) {
-            if ($gacha->description != $request->code) {
-                return redirect()->route('main');
-            }
-        }
+        
         $user = auth()->user();
         if (Profile::where('user_id', $user->id)->count() == 0) {
             return redirect()->route('user.address')->with('message', '発送先住所を登録する必要があります。')->with('type', 'notification');
