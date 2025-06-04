@@ -92,15 +92,15 @@ class RegisterController extends Controller
             return redirect()->back()->with('message', 'このメールはすでに登録されています！')->with('title', 'エラー')->with('type', 'dialog')->with('data', $data);
         }
 
-        $code = generateCode(4);
-        $code = "1111";
+        $code = generateCode(6);
+        // $code = "111111";
         
-        // $res = sendEmail($code, $email);
+        $res = sendEmail($code, $email);
         
-        // if (!$res) {
-        //     $data = array("status"=> 0);
-        //     return redirect()->back()->with('message', 'もう一度メールアドレスを入力してください！')->with('title', '入力エラー')->with('type', 'dialog')->with('data', $data);
-        // }
+        if (!$res) {
+            $data = array("status"=> 0);
+            return redirect()->back()->with('message', 'もう一度メールアドレスを入力してください！')->with('title', '入力エラー')->with('type', 'dialog')->with('data', $data);
+        }
 
         Verify::where('to', $email)->update(array('status'=>1));
         $data = array("to"=>$email, 'code'=>$code);
@@ -120,7 +120,7 @@ class RegisterController extends Controller
             return redirect()->back()->with('data', $data);
         } else {
             $data = array();
-            return redirect()->back()->with('message', '再度SMS認証をお願い致します！')->with('title', 'エラー')->with('type', 'dialog')->with('data', $data);
+            return redirect()->back()->with('message', 'メール認証を再度お願いします。')->with('title', 'エラー')->with('type', 'dialog')->with('data', $data);
         }
     }
 

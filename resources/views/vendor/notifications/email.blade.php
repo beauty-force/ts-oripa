@@ -1,7 +1,7 @@
 <x-mail::message>
 
 <div style="text-align: center; margin-bottom: 20px;">
-    <img src='https://トレしるオリパ.com/images/logo.png' style='width:100%; max-width:300px;'>
+    <img src='https://test.ts-oripa.com/images/logo.png' style='width:100%; max-width:300px;'>
 </div>
 {{-- Greeting --}}
 @if (! empty($greeting))
