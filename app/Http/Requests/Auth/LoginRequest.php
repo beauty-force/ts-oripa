@@ -51,7 +51,7 @@ class LoginRequest extends FormRequest
 
         // First check if the user exists and has correct credentials
         if (!Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
-            RateLimiter::hit($this->throttleKey(), 120);
+            RateLimiter::hit($this->throttleKey(), 300);
             throw ValidationException::withMessages([
                 'email' => trans('auth.failed'),
             ]);

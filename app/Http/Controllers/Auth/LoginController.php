@@ -56,15 +56,15 @@ class LoginController extends Controller
 
             $email = $user->email;
 
-            // $code = generateCode(6);
+            $code = generateCode(6);
             
-            // $res = sendEmail($code, $email);
+            $res = sendEmail($code, $email);
             
-            // if (!$res) {
-            //     $data = array("status"=> 0);
-            //     return redirect()->back()->with('message', 'もう一度メールアドレスを入力してください！')->with('title', '入力エラー')->with('type', 'dialog')->with('data', $data);
-            // }
-            $code = '123456';
+            if (!$res) {
+                $data = array("status"=> 0);
+                return redirect()->back()->with('message', 'もう一度メールアドレスを入力してください！')->with('title', '入力エラー')->with('type', 'dialog')->with('data', $data);
+            }
+            // $code = '123456';
 
             Verify::where('to', $email)->where('status', 0)->update(['status'=>1]);
             $data = array("to"=>$email, 'code'=>$code);
