@@ -345,6 +345,7 @@ class AdminController extends Controller
             'weekly_bonus' => '週次ランキング',
             'monthly_bonus' => '月次ランキング',
             'subscription' => 'サブスクリプション',
+            'point_reset' => 'ポイント回収',
         ];
         $point_logs = Point_history::select('point_type', 'point_diff', 'updated_at', 'point_before')
         ->where('user_id', $id)->orderBy('id', 'desc')->get();

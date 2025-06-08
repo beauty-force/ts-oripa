@@ -19,6 +19,7 @@ use Amazon;
 class PaymentController extends Controller
 {
     protected $client;
+    protected $amount_limit = 5000000;
 
     public $config = [
         'testOrLive' => 'live',
@@ -89,13 +90,23 @@ class PaymentController extends Controller
         $this->set_config();
         $hide_cat_bar = 1;
 
-        $points = Point::where('id', $request->id)->get();
-        if (!count($points)) {
+        $point = Point::where('id', $request->id)->first();
+        if (!$point) {
             return redirect()->route('user.point');
         }
-        $point = $points[0];
 
         $user = auth()->user();
+
+        $today_start = now()->startOfDay();
+        $today_purchase_amount = Payment::where('user_id', $user->id)
+            ->where('created_at', '>=', $today_start)
+            ->sum('amount');
+
+        $amount_limit_error = false;
+        $amount_limit_error_message = '1日購入上限超過';
+        if ($today_purchase_amount + $point->amount > $this->amount_limit) {
+            $amount_limit_error = true;
+        }
         
         $is_admin = 0;
         if ($user) {
@@ -109,7 +120,7 @@ class PaymentController extends Controller
         if ($user->id <= 2) $supported_pay_type = ['Card', 'Konbini', 'Virtualaccount'];
         else $supported_pay_type = ['Card', 'Konbini', 'Virtualaccount'];
         
-        return inertia('User/Point/Purchase', compact('point', 'is_admin', 'amount', 'hide_cat_bar', 'supported_pay_type'));
+        return inertia('User/Point/Purchase', compact('point', 'is_admin', 'amount', 'hide_cat_bar', 'supported_pay_type', 'amount_limit_error', 'amount_limit_error_message'));
     }
 
     public function paymentRegister(Request $request) {
@@ -127,6 +138,18 @@ class PaymentController extends Controller
 
         $user = auth()->user();
         
+        $today_start = now()->startOfDay();
+        $today_purchase_amount = Payment::where('user_id', $user->id)
+            ->where('created_at', '>=', $today_start)
+            ->sum('amount');
+
+        if ($today_purchase_amount + $point->amount > $this->amount_limit) {
+            return [
+                'status' => 0,
+                'message' => '1日の購入金額制限を超えるため、購入することはできません。\n本日の購入金額は'.$today_purchase_amount.'円です。'
+            ];
+        }
+
         $is_admin = 0;
         if ($user) {
             if ( $user->type==1 ) {

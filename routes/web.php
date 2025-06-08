@@ -88,9 +88,10 @@ Route::post('/register/verify_phone', [RegisterController::class, 'verify'])->na
 Route::post('/register/send_email', [RegisterController::class, 'send_email'])->name('register.email.send');
 Route::post('/register/verify_email', [RegisterController::class, 'verify_email'])->name('register.email.verify');
 
-Route::post('/register/verify', [LoginController::class, 'verify_email'])->name('admin.email.verify');
-
 Route::post('/register/register', [RegisterController::class, 'register'])->name('register.phone.register');
+
+Route::post('/email/verify', [LoginController::class, 'verify_email'])->name('email.verify');
+Route::get('/email/verify', [LoginController::class, 'verify_email_get'])->name('email.verify.get');
 
 Route::post('register', [RegisterController::class, 'store']);
 

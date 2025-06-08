@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
+use App\Models\User;
+use Carbon\Carbon;
+use App\Http\Controllers\PointHistoryController;
 
 class LoginRequest extends FormRequest
 {
@@ -31,6 +34,7 @@ class LoginRequest extends FormRequest
         return [
             'email' => ['required', 'string', 'email'],
             'password' => ['required', 'string'],
+            'fingerprint' => ['nullable', 'string'],
         ];
     }
 
@@ -47,7 +51,7 @@ class LoginRequest extends FormRequest
 
         // First check if the user exists and has correct credentials
         if (!Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
-            RateLimiter::hit($this->throttleKey());
+            RateLimiter::hit($this->throttleKey(), 120);
             throw ValidationException::withMessages([
                 'email' => trans('auth.failed'),
             ]);
@@ -56,12 +60,17 @@ class LoginRequest extends FormRequest
         // Get the authenticated user
         $user = Auth::user();
 
+        if ($user->updated_at < now()->subDays(180)) {
+            (new PointHistoryController)->create($user->id, $user->point, -$user->point, 'point_reset', 0);
+            $user->point = 0;
+            $user->save();
+        }
+
         // Check if user's status is not 1
         if ($user->status !== 1) {
             // Log the user out since they shouldn't be authenticated
             Auth::logout();
             
-            RateLimiter::hit($this->throttleKey());
             throw ValidationException::withMessages([
                 'email' => trans('auth.suspended'),
             ]);

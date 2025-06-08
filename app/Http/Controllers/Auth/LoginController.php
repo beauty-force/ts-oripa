@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Models\Verify;
 use App\Models\User;
-
+use Carbon\Carbon;
 
 class LoginController extends Controller
 {
@@ -41,31 +41,48 @@ class LoginController extends Controller
 
         $user = auth()->user();
 
-        // if ($user->type == 1) {
-        //     Auth::guard('web')->logout();
+        $currentIp = $request->ip();
+        $currentAgent = $request->userAgent();
+        $currentFingerprint = $request->fingerprint;
 
-        //     $email = $user->email;
+        if (!$user->last_login_at || 
+            Carbon::parse($user->last_login_at)->addDays(7) < now() ||
+            (
+                $user->last_fingerprint != $currentFingerprint &&
+                $user->last_login_ip != $currentIp
+            )
+        ) {
+            Auth::guard('web')->logout();
 
-        //     $code = generateCode(6);
+            $email = $user->email;
+
+            // $code = generateCode(6);
             
-        //     $res = sendEmail($code, $email);
+            // $res = sendEmail($code, $email);
             
-        //     if (!$res) {
-        //         $data = array("status"=> 0);
-        //         return redirect()->back()->with('message', 'もう一度メールアドレスを入力してください！')->with('title', '入力エラー')->with('type', 'dialog')->with('data', $data);
-        //     }
+            // if (!$res) {
+            //     $data = array("status"=> 0);
+            //     return redirect()->back()->with('message', 'もう一度メールアドレスを入力してください！')->with('title', '入力エラー')->with('type', 'dialog')->with('data', $data);
+            // }
+            $code = '123456';
 
-        //     Verify::where('to', $email)->update(array('status'=>1));
-        //     $data = array("to"=>$email, 'code'=>$code);
-        //     Verify::create($data);
+            Verify::where('to', $email)->where('status', 0)->update(['status'=>1]);
+            $data = array("to"=>$email, 'code'=>$code);
+            Verify::create($data);
 
-        //     $data = array("status"=> 1);
-
-        //     $hide_cat_bar = 1;
-
-        //     return inertia('Auth/AdminEmailVerify', compact('hide_cat_bar', 'email'));
-        // }
+            $hide_cat_bar = 1;
+            return Inertia::render('Auth/EmailVerify', [
+                'email' => $email,
+                'hide_cat_bar' => $hide_cat_bar,
+            ]);
+        }
         $request->session()->regenerate();
+
+        $user->last_login_ip = $currentIp;
+        $user->last_user_agent = $currentAgent;
+        $user->last_login_at = now();
+        $user->last_fingerprint = $currentFingerprint;
+        $user->save();
 
         if ($request->redirect_url) {
             return redirect($request->redirect_url);
@@ -76,19 +93,50 @@ class LoginController extends Controller
     public function verify_email(Request $request) {
         $code = $request->code;
         $email = $request->email;
+        $fingerprint = $request->fingerprint;
+        $user = User::where('email', $email)->first();
+        if (!$user) {
+            return redirect()->route('login');
+        }
+        
         $count = Verify::where('to', $email)->where('code', $code)->where('status', 0)->count();
+
         if ($count) {
             Verify::where('to', $email)->where('code', $code)->where('status', 0)->update(array('status'=>2));
             
-            $user = User::where('email', $email)->first();
             Auth::login($user);
 
             $request->session()->regenerate();
 
+            $user->last_login_ip = $request->ip();
+            $user->last_user_agent = $request->userAgent();
+            $user->last_login_at = now();
+            $user->last_fingerprint = $fingerprint;
+            $user->save();
+            
             return redirect()->intended(RouteServiceProvider::HOME);
         } else {
+            $failed_count = Verify::where('to', $user->email)
+                ->where('status', 1)
+                ->where('created_at', '>=', now()->subHours(1))
+                ->count();
+
+            if ($failed_count >= 9) {
+                $user->status = 0;
+                $user->save();
+            }
+            
             return redirect()->route('login');
         }
+    }
+
+    public function verify_email_get() {
+        $email = 'user@example.com';
+        $hide_cat_bar = 1;
+        return Inertia::render('Auth/EmailVerify', [
+            'email' => $email,
+            'hide_cat_bar' => $hide_cat_bar,
+        ]);
     }
 
     /**

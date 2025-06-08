@@ -36,7 +36,11 @@ class User extends Authenticatable
         'avatar',
         'line_id',
         'customer_id',
-        'current_plan'
+        'current_plan',
+        'last_login_at',
+        'last_login_ip',
+        'last_user_agent',
+        'last_fingerprint',
     ];
 
     /**
