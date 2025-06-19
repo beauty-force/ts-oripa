@@ -170,9 +170,7 @@ class GachaController extends Controller
     public function update(Request $request) { 
         $rules = [
             'point' => 'required',
-            'consume_point' => 'required',
             'count_card' => 'required|numeric',
-            'count' => 'required|numeric',
             'thumbnail' => 'required|image|max:4096',
             'image' => 'required|image',
             'category_id' => 'required',
@@ -193,9 +191,8 @@ class GachaController extends Controller
         $data = [
             // 'title' => $request->title,
             'point' => $request->point,
-            // 'consume_point' => $request->consume_point,
+            'consume_point' => $request->point,
             'count_card' => $request->count_card,
-            'count' => $request->count,
             // 'lost_product_type' => $request->lost_product_type,
             'category_id' => $request->category_id,
             'spin_limit' => $request->spin_limit,
