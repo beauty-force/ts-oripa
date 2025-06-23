@@ -254,7 +254,7 @@
                 <!-- <img src="https://dashboard.test.fincode.jp/assets/images/logos/vi_02.svg"/> -->
                 <a href="{{($is_admin==1)?route('test.user.point'):route('user.point')}}">
                     <svg xmlns="http://www.w3.org/2000/svg"  style="width:24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg>
-                    <img src="{{ asset('images/logo.png') }}"/>
+                    <img src="{{ asset('images/logo.png?v=2') }}"/>
                 </a>
             </div>
             
@@ -318,7 +318,7 @@
                 <!-- <img src="https://dashboard.test.fincode.jp/assets/images/logos/vi_02.svg"/> -->
                 <a href="{{($is_admin==1)?route('test.user.point'):route('user.point')}}">
                     <svg xmlns="http://www.w3.org/2000/svg"  style="width:24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg>
-                    <img src="{{ asset('images/logo.png') }}"/>
+                    <img src="{{ asset('images/logo.png?v=2') }}"/>
                 </a>
             </div>
             
@@ -380,7 +380,7 @@
                 <!-- <img src="https://dashboard.test.fincode.jp/assets/images/logos/vi_02.svg"/> -->
                 <a href="{{($is_admin==1)?route('test.user.point'):route('user.point')}}">
                     <svg xmlns="http://www.w3.org/2000/svg"  style="width:24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg>
-                    <img src="{{ asset('images/logo.png') }}"/>
+                    <img src="{{ asset('images/logo.png?v=2') }}"/>
                 </a>
             </div>
             

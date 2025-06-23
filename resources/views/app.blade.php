@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta property="og:title" content="トレしるオリパ">
-        <meta property="og:image" content="{{ asset('images/logo.jpg')}}">
+        <meta property="og:image" content="{{ asset('images/site_logo.png')}}">
         <meta property="og:type" content="website">
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
