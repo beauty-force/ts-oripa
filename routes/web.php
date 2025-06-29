@@ -119,6 +119,7 @@ Route::group(['prefix'=>'user', 'middleware' => 'user-access:user'], function(){
     Route::get('/gacha/result/{token}', [UserController::class, 'result'])->name('user.gacha.result'); 
 
     Route::post('/gacha/result/exchange', [UserController::class, 'result_exchange'])->name('user.gacha.result.exchange');
+    Route::post('/gacha/result/deliver', [UserController::class, 'result_deliver'])->name('user.gacha.result.deliver');
     Route::get('/gacha/end/{token}', [UserController::class, 'gacha_end'])->name('user.gacha.end');
     
     Route::get('/products', [UserController::class, 'products'])->name('user.products');

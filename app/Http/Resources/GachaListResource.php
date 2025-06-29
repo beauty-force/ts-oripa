@@ -14,7 +14,7 @@ class GachaListResource extends JsonResource
      */
     public function toArray($request)
     {
-        // $timeStatus = $this->timeStatus();
+        $timeStatus = $this->timeStatus();
         $ableCount = auth()->user()?->type == 1 ? $this->ableCount() : 0;
 
         return [
@@ -26,12 +26,12 @@ class GachaListResource extends JsonResource
             'count_rest'=>$this->lost_product_type == '1' ? 10000 : $this->count_card-$this->count,
             'thumbnail'=>getGachaThumbnailUrl($this->thumbnail),
             'status'=>$this->status,
-            // 'timeStatus'=>$timeStatus,
+            'timeStatus'=>$timeStatus,
             'order_level'=>$this->order_level,
             'rank_limit'=>$this->rank_limit,
             'ableCount'=>$ableCount,
-            // 'remaining'=>$timeStatus == 0 ? (strtotime($this->start_time) - strtotime(date('Y-m-d H:i:s'))) : 
-            //     ($this->end_time ? strtotime($this->end_time) - strtotime(date('Y-m-d H:i:s')) : 0),
+            'remaining'=>$timeStatus == 0 ? (strtotime($this->start_time) - strtotime(date('Y-m-d H:i:s'))) : 
+                ($this->end_time ? strtotime($this->end_time) - strtotime(date('Y-m-d H:i:s')) : 0),
             'gacha_limit'=>$this->gacha_limit,
         ];
     }

@@ -428,6 +428,38 @@ class UserController extends Controller
         }
     }
 
+    public function result_deliver(Request $request) {
+        $token = $request->token;
+        $checks = $request->checks;
+        $user = auth()->user();
+        
+        $delivery_limit = getOption('delivery_limit');
+        $delivery_limit = intval($delivery_limit == "" ? "1000" : $delivery_limit);
+
+        $products = Product_log::where('gacha_record_id', $token)->where('user_id', $user->id)->where('status', 1)->get();
+        $point = 0;
+        foreach($products as $product) {
+            $key = "id" . $product->id;
+            if (isset($checks[$key]) && $checks[$key]) {
+                $point += $product->point;
+            }
+        }
+        if ($point < $delivery_limit) {
+            return redirect()->back()->with('message', '発送依頼ができる最低ポイントは'.$delivery_limit.'ptです。')->with('title', '発送依頼エラー')->with('type', 'dialog');
+        }
+
+        $count = 0;
+        foreach($products as $product) {
+            $key = "id" . $product->id;
+            if (isset($checks[$key]) && $checks[$key] && $product->rare != 'ポイント') {
+                $product->status = 3;
+                $count += 1;
+                $product->save(); 
+            }
+        }
+        return redirect()->route('user.gacha.end', ['token'=>$token]);
+    }
+
     public function gacha_end(Request $request) {
         $token = $request->token;
         $point = 0; $number_products = 0;
@@ -440,6 +472,9 @@ class UserController extends Controller
                 $point = ((int)$point) + ((int)$product->point);
                 $number_products = $number_products + 1;
             }
+
+            $deliver_products = Product_log::where('gacha_record_id', $token)->where('status', 3)->count();
+
             $gacha_record = Gacha_record::find($token);
             if ($gacha_record) {
                 $gachas = Gacha::where('id', $gacha_record->gacha_id)->get();
@@ -449,7 +484,7 @@ class UserController extends Controller
                 $gacha = $gachas[0]->getDetail();
                 $hide_cat_bar = 1;
                 $hide_back_btn = 1;
-                return inertia('User/GachaEnd', compact('point', 'number_products', 'gacha', 'hide_cat_bar', 'hide_back_btn'));
+                return inertia('User/GachaEnd', compact('point', 'number_products', 'gacha', 'hide_cat_bar', 'hide_back_btn', 'deliver_products'));
             } else {
                 return redirect()->route('main');
             }
@@ -637,17 +672,6 @@ class UserController extends Controller
         
         if($count == 0) redirect()->back();
 
-        try {
-            $message = "発送依頼が出されました！\n";
-            foreach($products as $product) {
-                $key = "id" . $product->id;
-                if (isset($checks[$key]) && $checks[$key]) {
-                    $message = $message.$product->name."の".$product->rare."確保をお願いします。\n";
-                }
-            }
-        } catch(Exception $e) {
-
-        }
         return redirect()->back();
     }
 

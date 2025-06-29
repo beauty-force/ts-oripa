@@ -164,7 +164,24 @@ class GachaController extends Controller
         $plans = Plan::orderBy('amount', 'ASC')->get();
         $video_names = Gacha_video::where('gacha_id', 0)->pluck('level')->toArray();
         
-        return inertia('Admin/Gacha/Edit', compact('gacha', 'product_last', 'products', 'productsLostSetting', 'videos', 'ranks', 'lost_types', 'video_names', 'plans'));
+        $points = Gacha_lost_product::where('count', '>', 0)->orderBy('point')->select('point')->get();
+        $point = 0; $products_status = [];
+        foreach($points as $point1) {
+            if ($point1->point!=$point) {
+                $point = $point1->point;
+                $gacha_products_count = Gacha_lost_product::leftJoin('gachas', function($join) { $join->on('gachas.id', '=', 'gacha_lost_products.gacha_id'); })
+                ->where('gacha_lost_products.point', $point)
+                ->where('gachas.category_id', $gacha->category_id)
+                ->where('gachas.id', '!=', $id)
+                ->sum('gacha_lost_products.count');
+                $products_lost_count = Product::where('point', $point)->where('is_lost_product', 1)->where('category_id', $gacha->category_id)->where('marks', '>', 0)->sum('marks');
+                $arr['point'] = $point;
+                $arr['count'] = $products_lost_count - $gacha_products_count;
+                array_push( $products_status , $arr);
+            }  
+        }
+
+        return inertia('Admin/Gacha/Edit', compact('gacha', 'product_last', 'products', 'productsLostSetting', 'videos', 'ranks', 'lost_types', 'video_names', 'plans', 'products_status'));
     }
 
     public function update(Request $request) { 
