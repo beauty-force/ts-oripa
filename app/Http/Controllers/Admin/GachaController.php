@@ -53,11 +53,11 @@ class GachaController extends Controller
             'point' => $request->point,
             'consume_point' => $request->point,
             'count_card' => $request->count_card,
-            // 'lost_product_type' => $request->lost_product_type,
+            'lost_product_type' => "0",
             'thumbnail' => $thumbnail,
             'image' => $image,
             'category_id' => $request->category_id,
-            'spin_limit' => $request->count_card,
+            'spin_limit' => 0,
             // 'title' => $request->title,
         ];
         $gacha = Gacha::create($data);
@@ -210,7 +210,7 @@ class GachaController extends Controller
             'point' => $request->point,
             'consume_point' => $request->point,
             'count_card' => $request->count_card,
-            // 'lost_product_type' => $request->lost_product_type,
+            'lost_product_type' => $request->lost_product_type,
             'category_id' => $request->category_id,
             'spin_limit' => $request->spin_limit,
             'rank_limit' => $request->rank_limit,

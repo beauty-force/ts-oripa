@@ -65,7 +65,6 @@ class UserController extends Controller
         $total = 0;
         $offset = 0;
         $search_cond = [];
-        // if ($gachas[0]->lost_product_type != '1' && $gachas[0]->count == $gachas[0]->count_card || auth()->user() && auth()->user()->type == 1) {
         if (auth()->user() && auth()->user()->type == 1) {
 
             $gacha_log = Product_log::leftJoin('users', function($join) { $join->on('users.id', '=', 'product_logs.user_id'); })
@@ -160,17 +159,13 @@ class UserController extends Controller
                 Product_log::create($data);
                 
                 if ($product_item->is_last == 1) continue;
-                if ($gacha->lost_product_type != '1' || $product_item->is_lost_product == 1 || $product_item->order > 0) {
-                    $product_item->decrement('marks');
-                }
+                $product_item->decrement('marks');
 
-                if ($gacha->lost_product_type != '1') {
-                    if ($product_item->is_lost_product == 1) {
-                        Gacha_lost_product::where('gacha_id', $gacha->id)
-                        ->where('point', $product_item->point)
-                        ->where('count','>',0)
-                        ->first()?->decrement('count');
-                    }
+                if ($product_item->is_lost_product == 1) {
+                    Gacha_lost_product::where('gacha_id', $gacha->id)
+                    ->where('point', $product_item->point)
+                    ->where('count','>',0)
+                    ->first()?->decrement('count');
                 }
             }
         
@@ -233,7 +228,7 @@ class UserController extends Controller
             return redirect()->route('main'); 
         }
         try {
-            if (!$gacha || $gacha->lost_product_type != '1' && $gacha->count_card == $gacha->count || $gacha->status == 0) {
+            if (!$gacha || $gacha->count_card == $gacha->count || $gacha->status == 0) {
                 return redirect()->route('main');
             }
             if ($gacha->rank_limit > 0 && $gacha->rank_limit != $user->current_rank) {
@@ -252,19 +247,21 @@ class UserController extends Controller
                 $message = '完了した。';
                 return redirect()->back()->with('message', $message)->with('title', 'ガチャの制限時間')->with('type', 'dialog');
             }
+
+            $show_days = $gacha->lost_product_type ?? '0';
+            if ($show_days != '0') {
+                if ($user->created_at < date('Y-m-d H:i:s', strtotime('-'.$show_days.' days'))) {
+                    $message = 'このガチャは登録後'.$show_days.'日間限定です。';
+                    return redirect()->back()->with('message', $message)->with('title', 'ガチャの制限時間')->with('type', 'dialog');
+                }
+            }
             
-            $count_rest = $gacha->lost_product_type == '1' ? 10000 : $gacha->count_card - $gacha->count;
+            $count_rest = $gacha->count_card - $gacha->count;
             
             if ($gacha->spin_limit == 0) $remainingSpin = $count_rest;
             else {
-                $current = date('Y-m-d H:i:s');
-                $current_day = date('Y-m-d 18:00:00');
-                
-                if ($current < $current_day) $current_day = date('Y-m-d 18:00:00', strtotime($current_day.' -1 days'));
-        
                 $totalSpin = Gacha_record::where('user_id', $user->id)
                     ->where('gacha_id', $id)
-                    ->where('created_at', '>=', $current_day)
                     ->where('status', 1)
                     ->sum('type');
                 $remainingSpin = $gacha->spin_limit - $totalSpin;

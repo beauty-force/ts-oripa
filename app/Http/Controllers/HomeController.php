@@ -52,13 +52,19 @@ class HomeController extends Controller
                 if ($gacha->gacha_limit == 1) {
                     $last = Gacha_record::where('user_id', $user->id)->where('gacha_id', $gacha->id)->where('status', 1)->latest()->first();
                     if ($last) {
-                        $gacha->status = 1;
                         $now = $this->get_period_day(date('Y-m-d H:i:s'));
                         $record = $this->get_period_day($last->updated_at);
                         if ($now == $record) {
+                            $gacha->status = 1;
                             array_push($pulled, $gacha);
                             continue;
                         }
+                    }
+                }
+                $show_days = $gacha->lost_product_type ?? '0';
+                if ($show_days != '0') {
+                    if ($user->created_at < date('Y-m-d H:i:s', strtotime('-'.$show_days.' days'))) {
+                        continue;
                     }
                 }
                 array_push($gachas_, $gacha);

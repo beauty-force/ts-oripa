@@ -23,7 +23,7 @@ class GachaListResource extends JsonResource
             'point'=>$this->point,
             'consume_point'=>$this->consume_point,
             'count_card'=>$this->count_card,
-            'count_rest'=>$this->lost_product_type == '1' ? 10000 : $this->count_card-$this->count,
+            'count_rest'=>$this->count_card-$this->count,
             'thumbnail'=>getGachaThumbnailUrl($this->thumbnail),
             'status'=>$this->status,
             'timeStatus'=>$timeStatus,

@@ -40,37 +40,26 @@ class Gacha extends Model
         $res = 0; $rest_count = 0; $rest_product = 0; $is_error = 0;
         $rest_product = Product::where('gacha_id', $this->id)->where('is_lost_product', 0)->where('is_last', 0)->sum('marks'); 
         
-        // if ($this->lost_product_type != '1') {
             $productLostSettings = Gacha_lost_product::where('gacha_id', $this->id)->where('count', '>', 0)->get();
             foreach($productLostSettings as $productLostSetting) {
                 $products_lost = Product::where('point', $productLostSetting->point)->where('is_lost_product', 1)->where('category_id', $this->category_id)->where('marks', '>', 0);
-                // if ($this->lost_product_type) {
-                //     $products_lost = Product::where('lost_type', $this->lost_product_type);
-                // }
                 $temp = $products_lost->sum('marks');
                 
-                if ($this->lost_product_type != '1') {
-                    if ($temp >= $productLostSetting->count) {
-                        $rest_product = $rest_product + $productLostSetting->count;
-                    } else {
-                        $is_error = 1; $rest_product = 0;
-                        break;
-                    }
+                
+                if ($temp >= $productLostSetting->count) {
+                    $rest_product = $rest_product + $productLostSetting->count;
                 } else {
-                    if ($temp>=100) {
-                        $rest_product = $rest_product + $productLostSetting->count;
-                    } else {
-                        $is_error = 1; $rest_product = 0;
-                        break;
-                    }
+                    $is_error = 1; $rest_product = 0;
+                    break;
                 }
+                
             }
         // }
         
         $rest_count = $this->count_card - $this->count;
         if ($rest_count<0) { $rest_count = 0; }
 
-        if ($this->lost_product_type != '1' && $rest_count < $rest_product) {
+        if ($rest_count < $rest_product) {
             $is_error = 1;
         } else {
             $res = $rest_product;
@@ -137,16 +126,15 @@ class Gacha extends Model
             array_push($arr_select, $item);
         }
 
-        if ($this->lost_product_type != '1') {
-            if ($rest_total != ($to+1)) {
-                return [];
-            }
-    
-            if ($award_total>$rest_total) {
-                return [];
-            }
+        
+        if ($rest_total != ($to+1)) {
+            return [];
         }
 
+        if ($award_total>$rest_total) {
+            return [];
+        }
+        
         $rand_ids = [];
         $index = 0;
         
@@ -159,7 +147,7 @@ class Gacha extends Model
             }
             for($j=0; $j<10000; $j++) {
                 $rand_val = rand(0, $mid);
-                if (!in_array($rand_val, $rand_ids) || $this->lost_product_type == '1') {
+                if (!in_array($rand_val, $rand_ids)) {
                     array_push($rand_ids, $rand_val);
                     break;
                 }
@@ -180,9 +168,6 @@ class Gacha extends Model
                         $count_product = $count_product + 1;
                     } else {
                         $sql = Product::where('point', $item['point'])->where('is_lost_product', 1)->where('category_id', $this->category_id)->where('marks', '>', 0);
-                        // if ($this->lost_product_type) {
-                        //     $sql = Product::where('lost_type', $this->lost_product_type);
-                        // }
                         $values = $sql->inRandomOrder()->get();
                         foreach($values as $value) {
                             $value_id = $value->id;
@@ -211,7 +196,7 @@ class Gacha extends Model
         }
 
         // if ($count_product!=0 && $count_product==count($products)) {
-        if ($this->lost_product_type != '1' && $award_total == $rest_total) {
+        if ($award_total == $rest_total) {
             $products_last = Product::where('gacha_id', $this->id)->where('is_last', 1)->where('is_lost_product', 0)->first();
             if ($products_last) {
                 array_push($res_product_ids, $products_last->id);
@@ -222,7 +207,7 @@ class Gacha extends Model
     }
 
     public function getDetail() {
-        $count_rest = $this->lost_product_type == '1' ? 10000 : $this->count_card-$this->count; 
+        $count_rest = $this->count_card - $this->count; 
         $timeStatus = $this->timeStatus();
         $ableCount = $this->ableCount();
 
