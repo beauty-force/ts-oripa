@@ -40,7 +40,7 @@ class ProfileController extends Controller
             'invitations' => $invitations,
             'status' => session('status'),
             'hide_cat_bar' => 1,
-            'invite_url' => 'https://test.ts-oripa.com/register?invitation_code='.$user->invite_code,
+            'invite_url' => 'https://ts-oripa.com/register?invitation_code='.$user->invite_code,
             'invite_bonus' => getOption('invite_bonus'),
             'invited_bonus' => getOption('invited_bonus'),
             'line_link_url' => 'https://line.me/R/ti/p/'.$line_id,
@@ -49,7 +49,7 @@ class ProfileController extends Controller
 友達からトレしるオリパへの招待状が届いています！新規登録時に下記の招待コードを入力すると、紹介者とあなたの両方に特典ポイントがプレゼントされます！🎁
 
 🔐 招待コード: 【$user->invite_code"."】
-📱 登録はこちらから: https://test.ts-oripa.com/register?invitation_code=$user->invite_code
+📱 登録はこちらから: https://ts-oripa.com/register?invitation_code=$user->invite_code
 
 トレしるオリパで素敵な体験を始めましょう！🌟",
             'twitter_invite_text' => "【トレしるオリパ 特別招待キャンペーン🎯】
@@ -59,7 +59,7 @@ class ProfileController extends Controller
 
 🔐 招待コード: 【$user->invite_code"."】
 📱 登録はこちらから
-（https://test.ts-oripa.com/register?invitation_code=$user->invite_code)"
+（https://ts-oripa.com/register?invitation_code=$user->invite_code)"
 
         ]);
     }

@@ -59,7 +59,7 @@ LINE連携者限定MAX80%OFFクーポンをプレゼント🎁✨
 高還元カードや推しカードとの出会いを祈ってガチャるだけ😍💕
 
 👇ガチャはこちらから👇
-https://test.ts-oripa.com/?openExternalBrowser=1");
+https://ts-oripa.com/?openExternalBrowser=1");
             $user->save();
             $line_account->delete();
         }
@@ -97,7 +97,7 @@ LINEで新発売オリパの優先告知やお得なクーポンをお届けし�
 👇特典をゲットしよう👇👇👇 
 
 🔗 LINE連携を完了する 
-https://test.ts-oripa.com/line/confirm?id=$eventId&openExternalBrowser=1
+https://ts-oripa.com/line/confirm?id=$eventId&openExternalBrowser=1
 (20秒で即連携可能🔥)
             ");
 
