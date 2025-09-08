@@ -70,68 +70,50 @@ class GachaController extends Controller
     }
 
     public function copy(Request $request) {
-        $id = $request->gacha_id;
+        $id = $request->id;
         $gacha = Gacha::find($id);
         $data = [
-            'title' => $request->title,
-            'point' => $request->point ? $gacha->point : 0,
-            'consume_point' => $request->point ? $gacha->point : 0,
-            'count_card' => $request->count_card ? $gacha->count_card : 0,
+            'title' => $gacha->title,
+            'point' => $gacha->point,
+            'consume_point' => $gacha->point,
+            'count_card' => $gacha->count_card,
             'lost_product_type' => $gacha->lost_product_type,
-            'thumbnail' => $request->thumbnail ? $gacha->thumbnail : '',
-            'image' => $request->detail_image ? $gacha->image : '',
+            'thumbnail' => $gacha->thumbnail,
+            'image' => $gacha->image,
             'category_id' => $gacha->category_id,
-            'spin_limit' => $request->spin_limit ? $gacha->spin_limit : 0,
+            'spin_limit' => $gacha->spin_limit,
         ];
         $new_gacha = Gacha::create($data);
-        if ($request->videos) {
-            $videos = Gacha_video::where('gacha_id', $id)->get();
-            foreach ($videos as $video) {
-                Gacha_video::create([
-                    'level' => $video['level'],
-                    'gacha_id' => $new_gacha->id,
-                    'point' => $video['point'],
-                    'file' => $video['file']
-                ]);
-            }
+        $videos = Gacha_video::where('gacha_id', $id)->get();
+        foreach ($videos as $video) {
+            Gacha_video::create([
+                'level' => $video['level'],
+                'gacha_id' => $new_gacha->id,
+                'point' => $video['point'],
+                'file' => $video['file']
+            ]);
         }
-        if ($request->cards) {
-            $cards = Gacha_lost_product::select('point', 'count')->where('gacha_id', $id)->get();
-            foreach ($cards as $card) {
-                $data = ['gacha_id'=>$new_gacha->id, 'point'=>$card->point, 'count'=>$card->count];
-                Gacha_lost_product::create($data);
-            }
+        
+        $cards = Gacha_lost_product::select('point', 'count')->where('gacha_id', $id)->get();
+        foreach ($cards as $card) {
+            $data = ['gacha_id'=>$new_gacha->id, 'point'=>$card->point, 'count'=>$card->count];
+            Gacha_lost_product::create($data);
         }
-        if ($request->last_product) {
-            $product = Product::where('is_last', 1)->where('is_lost_product', 0)->where('gacha_id', $id)->first();
-            if ($product) {
-                $data = [
-                    'name' => $product->name,
-                    'point' => $product->point,
-                    'rare' => $product->rare,
-                    'image' => $product->image,
-                    'gacha_id' => $new_gacha->id,
-                    'is_last' => 1
-                ];
-                Product::create($data);
-            }
-        }
-        if ($request->rare_product) {
-            $products = Product::where('is_last', 0)->where('is_lost_product', 0)->where('gacha_id', $id)->get();
-            foreach ($products as $product) {
-                $data = [
-                    'name' => $product->name,
-                    'point' => $product->point,
-                    'rare' => $product->rare,
-                    'gacha_id' =>$new_gacha->id,
-                    'marks' => $product->marks,
-                    'image' => $product->image,
-                    'is_last' => 0,
-                    'rank' => $product->rank,
-                    'order' => $product->order,
-                ];
-                Product::create($data);
-            }
+        
+        $products = Product::where('is_lost_product', 0)->where('gacha_id', $id)->get();
+        foreach ($products as $product) {
+            $data = [
+                'name' => $product->name,
+                'point' => $product->point,
+                'rare' => $product->rare,
+                'gacha_id' =>$new_gacha->id,
+                'marks' => $product->marks,
+                'image' => $product->image,
+                'is_last' => 0,
+                'rank' => $product->rank,
+                'order' => $product->order,
+            ];
+            Product::create($data);
         }
         return redirect(combineRoute(route('admin.gacha.edit', $new_gacha->id), $request->category_id) ); 
     }
