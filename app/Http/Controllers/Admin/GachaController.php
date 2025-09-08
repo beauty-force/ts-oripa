@@ -170,6 +170,7 @@ class GachaController extends Controller
         $rules = [
             'point' => 'required',
             'count_card' => 'required|numeric',
+            'count' => 'required|numeric',
             'thumbnail' => 'required|image|max:4096',
             'image' => 'required|image',
             'category_id' => 'required',
@@ -197,6 +198,7 @@ class GachaController extends Controller
             'spin_limit' => $request->spin_limit,
             'rank_limit' => $request->rank_limit,
             'plan_limit' => $request->plan_limit,
+            'count' => $request->count,
             // 'need_line' => $request->need_line,
         ];
 
