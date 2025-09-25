@@ -165,29 +165,32 @@ class RegisterController extends Controller
         ]);
         
         if ($friend) {
-            $invitation = Invitation::create([
-                'user_id' => $user->id,
-                'inviter' => $friend->id
-            ]);
-            $invite_bonus = getOption('invite_bonus');
-            if ($invite_bonus == '') $invite_bonus = '0';
-            $invite_bonus = intval($invite_bonus);
-
-            if ($invite_bonus > 0) {
-                (new PointHistoryController)->create($friend->id, $friend->point, $invite_bonus, 'invite', $invitation->id);
-                $friend->point += $invite_bonus;
-                $friend->save();
+            $count = Invitation::where('inviter', $friend->id)->count();
+            if ($count < 20) {
+                $invitation = Invitation::create([
+                    'user_id' => $user->id,
+                    'inviter' => $friend->id
+                ]);
+                $invite_bonus = getOption('invite_bonus');
+                if ($invite_bonus == '') $invite_bonus = '0';
+                $invite_bonus = intval($invite_bonus);
+    
+                if ($invite_bonus > 0) {
+                    (new PointHistoryController)->create($friend->id, $friend->point, $invite_bonus, 'invite', $invitation->id);
+                    $friend->point += $invite_bonus;
+                    $friend->save();
+                }
+    
+                $invited_bonus = getOption('invited_bonus');
+                if ($invited_bonus == '') $invited_bonus = '0';
+                $invited_bonus = intval($invited_bonus);
+                
+                if ($invited_bonus > 0) {
+                    (new PointHistoryController)->create($user->id, $user->point, $invited_bonus, 'invited', $invitation->id);
+                    $user->point += $invited_bonus;
+                    $user->save();
+                }
             }
-
-            $invited_bonus = getOption('invited_bonus');
-            if ($invited_bonus == '') $invited_bonus = '0';
-            $invited_bonus = intval($invited_bonus);
-            
-            if ($invited_bonus > 0) {
-                (new PointHistoryController)->create($user->id, $user->point, $invited_bonus, 'invited', $invitation->id);
-                $user->point += $invited_bonus;
-                $user->save();
-            }   
         }
         event(new Registered($user));
 
