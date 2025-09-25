@@ -10,6 +10,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\PointHistoryController;
 use Illuminate\Support\Facades\Log;
+use App\Models\Coupon_record;
+use App\Models\Coupon;
 
 use \Exception;
 use Str;
@@ -87,6 +89,9 @@ class PaymentController extends Controller
     }
 
     public function purchase(Request $request) {
+        $coupon_id = isset($request->coupon_id) ? intval($request->coupon_id) : 0;
+        $current_rate = $this->get_discount_rate($coupon_id, $request->id);
+        
         $this->set_config();
         $hide_cat_bar = 1;
 
@@ -115,17 +120,29 @@ class PaymentController extends Controller
             }
         }
         
-        $amount = $point->amount;
+        $amount = $point->amount - intval($point->amount * $current_rate / 100);
 
         if ($user->id <= 2) $supported_pay_type = ['Card', 'Konbini', 'Virtualaccount'];
         else $supported_pay_type = ['Card', 'Konbini', 'Virtualaccount'];
         
-        return inertia('User/Point/Purchase', compact('point', 'is_admin', 'amount', 'hide_cat_bar', 'supported_pay_type', 'amount_limit_error', 'amount_limit_error_message'));
+        return inertia('User/Point/Purchase', compact('coupon_id', 'point', 'is_admin', 'amount', 'hide_cat_bar', 'supported_pay_type', 'amount_limit_error', 'amount_limit_error_message'));
+    }
+
+    public function get_discount_rate($coupon_id, $point_id) {
+        $record = Coupon_record::where('id', $coupon_id)->where('status', 0)->where('user_id', auth()->user()->id)->first();
+        if ($record) {
+            $coupon = Coupon::find($record->coupon_id);
+            $discount_rate = $coupon?->discount_rate->toArray();
+            if ($discount_rate && count($discount_rate) > 0 && $coupon->expiration > now()) {
+                foreach($discount_rate as $rate) if ($rate['point_id'] == $point_id) return $rate['rate'];
+            }
+        }
+        return 0;
     }
 
     public function paymentRegister(Request $request) {
         $coupon_id = isset($request->coupon_id) ? intval($request->coupon_id) : 0;
-        $current_rate = 0;//$this->get_discount_rate($coupon_id, $request->id);
+        $current_rate = $this->get_discount_rate($coupon_id, $request->id);
         
         $this->set_config();
         $hide_cat_bar = 1;
@@ -185,6 +202,7 @@ class PaymentController extends Controller
                     // "tax" => "0",
                     "client_field_1" => str($user->id),
                     "client_field_2" => str($point->id),
+                    "client_field_3" => str($coupon_id)
                 ],
                 "konbini" => [
                     "payment_term_day" => "10",
@@ -309,7 +327,7 @@ class PaymentController extends Controller
                         'access_id' => $request->access_id,
                         'order_id' => $request->order_id,
                         'pay_type' => $request->pay_type,
-                        'coupon_id' => 0,
+                        'coupon_id' => $request->client_field_3,
                         'amount' => intval($request->amount),
                     ]);
                 }
@@ -322,13 +340,23 @@ class PaymentController extends Controller
                         return response()->json(['receive' => "0"]);
                     }
                     
+                    $coupon_record = Coupon_record::find($request->client_field_3);
                     if ($point->amount != intval($request->amount)) {
-                        $pt_amount = intval($request->amount);
+                        if (!$coupon_record || $coupon_record->status != 0) {
+                            $pt_amount = $request->amount;
+                        }
+                        if ($request->pay_type == 'Virtualaccount' && $request->amount != $request->billing_amount) {
+                            $pt_amount = $request->amount;
+                        }
                     }
                     if ($request->pay_type == 'Virtualaccount') {
                         $payment->update(['amount' => intval($request->amount)]);
                     }
+                    if ($payment->status == 1) {
+                        return response()->json(['receive' => "0"]);
+                    }
                     $payment->update(['status' => 1]);
+                    $coupon_record?->update(['status' => 1]);
 
                     (new PointHistoryController)->create($user->id, $user->point, $pt_amount, 'purchase', $payment->id);
                     

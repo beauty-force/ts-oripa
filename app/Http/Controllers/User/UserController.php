@@ -811,7 +811,7 @@ class UserController extends Controller
             if ($count >= $coupon->user_limit) {
                 return redirect()->back()->with('message', 'すでにこのコードを制限回数分使用しました。')->with('title', '取得エラー')->with('type', 'dialog');
             }
-            $records = Coupon_record::where(['coupon_id' => $coupon->id, 'status' => 1])->count();
+            $records = Coupon_record::where(['coupon_id' => $coupon->id])->count();
             if ($records == $coupon->count) {
                 return redirect()->back()->with('message', '使用可能な人数を超えました。')->with('title', '取得エラー')->with('type', 'dialog');
             }
