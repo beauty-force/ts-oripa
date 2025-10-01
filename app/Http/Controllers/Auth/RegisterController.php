@@ -199,6 +199,16 @@ class RegisterController extends Controller
 
         Auth::login($user);
 
+        $currentIp = $request->ip();
+        $currentAgent = $request->userAgent();
+        $currentFingerprint = $request->fingerprint;
+
+        $user->last_login_ip = $currentIp;
+        $user->last_user_agent = $currentAgent;
+        $user->last_login_at = now();
+        $user->last_fingerprint = $currentFingerprint;
+        $user->save();
+
         return redirect(RouteServiceProvider::HOME);
     }
 
