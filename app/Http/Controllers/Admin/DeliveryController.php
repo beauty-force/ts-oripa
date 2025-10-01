@@ -160,10 +160,10 @@ class DeliveryController extends Controller
         if ($count > 0) {
             $email = User::find($user_id)->email;
 
-            $content = "<center><img src='https://ts-oripa.com/images/delivery_complete.png' style='width:100%; max-width:400px;'></center>
-<p>この度は「トレしるオリパ」をご利用いただき、誠にありがとうございます。<br/>
+            $content = "<p>この度は「トレしるオリパ」をご利用いただき、誠にありがとうございます。<br/>
 お客様より発送依頼をいただきました商品を、本日発送いたしました。<br/><br/>
 {$product_details}<br/>
+追跡番号: {$request->tracking_number}<br/>
 今後とも「トレしるオリパ」をよろしくお願いいたします。
 </p>";
             Mail::send([], [], function ($message) use ($email, $content)
