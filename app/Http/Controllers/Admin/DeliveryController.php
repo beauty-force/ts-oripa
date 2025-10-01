@@ -143,6 +143,8 @@ class DeliveryController extends Controller
         $checks = $request->checks;
         $products = Product_log::where('user_id', $user_id)->where('status', 3)->get();
 
+        $product_details = "";
+
         $count = 0;
         foreach($products as $product) {
             $key = "id" . $product->id;
@@ -151,10 +153,28 @@ class DeliveryController extends Controller
                 $product->tracking_number = $request->tracking_number;
                 $count += 1;
                 $product->save();
+                $product_details .= "・" . $product->name . " (" . $product->rare . ")<br/>";
             }
         }
 
-        
+        if ($count > 0) {
+            $email = User::find($user_id)->email;
+
+            $content = "<center><img src='https://ts-oripa.com/images/delivery_complete.png' style='width:100%; max-width:400px;'></center>
+<p>この度は「トレしるオリパ」をご利用いただき、誠にありがとうございます。<br/>
+お客様より発送依頼をいただきました商品を、本日発送いたしました。<br/><br/>
+{$product_details}<br/>
+今後とも「トレしるオリパ」をよろしくお願いいたします。
+</p>";
+            Mail::send([], [], function ($message) use ($email, $content)
+            {
+                $message->to($email)
+                    ->subject('トレしるオリパ 発送完了のお知らせ')
+                    ->from(env('MAIL_FROM_ADDRESS'), 'トレしるオリパ')
+                    ->html($content);
+            });
+        }
+
         return redirect()->back()->with('message', '発送済みにしました！')->with('title', '発送')->with('type', 'dialog');
     }
 

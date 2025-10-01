@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 use Str;
 use DB;
+use App\Models\Payment;
 
 class ProfileController extends Controller
 {
@@ -28,6 +29,8 @@ class ProfileController extends Controller
             $user->save();
         }
 
+        $payment = Payment::where('user_id', $user->id)->where('status', 1)->sum('amount');
+
         $invitations = DB::table('invitations')
             ->leftjoin('users', 'users.id', '=', 'invitations.user_id')
             ->leftjoin('profiles', 'profiles.user_id', '=', 'invitations.user_id')
@@ -41,6 +44,7 @@ class ProfileController extends Controller
             'status' => session('status'),
             'hide_cat_bar' => 1,
             'invite_url' => 'https://test.ts-oripa.com/register?invitation_code='.$user->invite_code,
+            'payment' => $payment >= 10000,
             'invite_bonus' => getOption('invite_bonus'),
             'invited_bonus' => getOption('invited_bonus'),
             'line_link_url' => 'https://line.me/R/ti/p/'.$line_id,

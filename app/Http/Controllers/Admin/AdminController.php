@@ -203,8 +203,9 @@ class AdminController extends Controller
         $hide_cat_bar = 1;
 
         $total_point = User::where('type', 0)->sum('point');
+        $total_purchase = Payment::where('status', 1)->sum('amount');
 
-        return inertia('Admin/Users/Index', compact('users', 'total', 'search_cond', 'hide_cat_bar', 'total_point'));
+        return inertia('Admin/Users/Index', compact('users', 'total', 'search_cond', 'hide_cat_bar', 'total_point', 'total_purchase'));
     }
 
     public function exportUsers(Request $request) {

@@ -339,6 +339,7 @@ class PaymentController extends Controller
                     if ($payment->status == 1) {
                         return response()->json(['receive' => "0"]);
                     }
+                    $payment->update(['status' => 1]);
                     
                     $coupon_record = Coupon_record::find($request->client_field_3);
                     if ($point->amount != intval($request->amount)) {
@@ -352,10 +353,7 @@ class PaymentController extends Controller
                     if ($request->pay_type == 'Virtualaccount') {
                         $payment->update(['amount' => intval($request->amount)]);
                     }
-                    if ($payment->status == 1) {
-                        return response()->json(['receive' => "0"]);
-                    }
-                    $payment->update(['status' => 1]);
+                    
                     $coupon_record?->update(['status' => 1]);
 
                     (new PointHistoryController)->create($user->id, $user->point, $pt_amount, 'purchase', $payment->id);
