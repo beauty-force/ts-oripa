@@ -16,6 +16,7 @@ use Str;
 use App\Models\User;
 use App\Models\Verify;
 use App\Models\Invitation;
+use App\Models\Payment;
 
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -166,7 +167,9 @@ class RegisterController extends Controller
         
         if ($friend) {
             $count = Invitation::where('inviter', $friend->id)->count();
-            if ($count < 20) {
+            $payment = Payment::where('user_id', $friend->id)->where('status', 1)->sum('amount');
+
+            if ($count < 20 && $payment >= 10000) {
                 $invitation = Invitation::create([
                     'user_id' => $user->id,
                     'inviter' => $friend->id
