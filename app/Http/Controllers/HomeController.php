@@ -36,6 +36,7 @@ class HomeController extends Controller
         $rank = $user && $user->type == 0 ? $user->current_rank : 0;
         $gachas = Gacha::where('category_id', $cat_id)
             ->where('status', 1)
+            ->whereRaw('(ISNULL(start_time) || start_time<=NOW())')
             ->whereRaw('(ISNULL(end_time) || end_time>NOW())')
             ->where(function($query) use ($rank) {
                 $query->where('rank_limit', '=', $rank)
