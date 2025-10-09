@@ -25,6 +25,7 @@ use App\Models\Rank;
 use App\Models\Ranking_bonus;
 use App\Models\Ranking_history;
 use App\Models\Product_log;
+use App\Models\Invitation;
 
 use ImageResize;
 use Str;
@@ -202,10 +203,11 @@ class AdminController extends Controller
 
         $hide_cat_bar = 1;
 
-        $total_point = User::where('type', 0)->sum('point');
-        $total_purchase = Payment::where('status', 1)->sum('amount');
+        $total_point = intval(User::where('type', 0)->sum('point'));
+        $total_purchase = intval(Payment::where('status', 1)->sum('amount'));
+        $total_invite = Invitation::count();
 
-        return inertia('Admin/Users/Index', compact('users', 'total', 'search_cond', 'hide_cat_bar', 'total_point', 'total_purchase'));
+        return inertia('Admin/Users/Index', compact('users', 'total', 'search_cond', 'hide_cat_bar', 'total_point', 'total_purchase', 'total_invite'));
     }
 
     public function exportUsers(Request $request) {
