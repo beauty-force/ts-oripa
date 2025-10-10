@@ -203,7 +203,7 @@ class AdminController extends Controller
 
         $hide_cat_bar = 1;
 
-        $total_point = intval(User::where('type', 0)->sum('point'));
+        $total_point = intval(User::where('type', 0)->where('status', 1)->sum('point'));
         $total_purchase = intval(Payment::where('status', 1)->sum('amount'));
         $total_invite = Invitation::count();
 
