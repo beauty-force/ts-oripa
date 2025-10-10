@@ -176,6 +176,7 @@ class AdminController extends Controller
         ->leftJoinSub($purchases, 'purchases', function($join) {
             $join->on('users.id', '=', 'purchases.user_id');
         })
+        ->leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
         ->select('users.id', 'users.name', 'users.email', 'users.point', DB::raw('LPAD(users.phone, 11, "0") as phone'), 'users.status', 'purchases.amount', 'ranks.title as rank', 'users.line_id');
 
         // if ($order_by == 'amount') {
@@ -188,7 +189,8 @@ class AdminController extends Controller
             $query->where('users.email', 'like', $keyword)
             ->orWhere('users.phone', 'like', '%'.$keyword.'%')
             ->orWhere('users.name', 'like', '%'.$keyword.'%')
-            ->orWhere('users.invite_code', 'like', $keyword);
+            ->orWhere('users.invite_code', 'like', $keyword)
+            ->orWhere(DB::raw('CONCAT(profiles.prefecture, profiles.city, profiles.street, profiles.building)'), 'like', '%'.$keyword.'%');
         });
         
         $total = $users->count();
@@ -408,6 +410,20 @@ class AdminController extends Controller
                     return redirect()->back()->with('message', $message)->with('type', 'dialog');
                 }
             }
+        }
+
+        if (isset($request->user_ids)) {
+
+            $userIds = $request->user_ids;
+            $count = count($userIds);
+
+            if ($request->status == 0) {
+                Product_log::whereIn('user_id', $userIds)->whereIn('status', [1, 3])->update(['status' => 0]);
+            }
+
+            User::whereIn('id', $userIds)->update(['status' => $request->status]);
+
+            return redirect()->back()->with('message', "{$count}人のユーザーを削除しました。")->with('type', 'dialog');
         }
     }
 
