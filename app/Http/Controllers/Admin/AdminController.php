@@ -185,12 +185,12 @@ class AdminController extends Controller
         //     })->select('users.*', 'purchases.amount');
         // }
 
-        $users = $users->where('type', 0)->where('status', '<', 2)->where(function($query) use ($keyword) {
+        $users = $users->where('type', 0)->where('users.status', '<', 2)->where(function($query) use ($keyword) {
             $query->where('users.email', 'like', $keyword)
             ->orWhere('users.phone', 'like', '%'.$keyword.'%')
             ->orWhere('users.name', 'like', '%'.$keyword.'%')
             ->orWhere('users.invite_code', 'like', $keyword)
-            ->orWhere(DB::raw('CONCAT(profiles.prefecture, profiles.city, profiles.street, profiles.building)'), 'like', '%'.$keyword.'%');
+            ->orWhere(DB::raw('CONCAT(profiles.prefecture, profiles.address)'), 'like', '%'.$keyword.'%');
         });
         
         $total = $users->count();
