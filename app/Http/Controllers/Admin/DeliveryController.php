@@ -71,8 +71,11 @@ class DeliveryController extends Controller
                     $product->increment('marks');
             }
             $user = User::find($log->user_id);
-            if ($user) (new PointHistoryController)->create($user->id, $user->point, $log->point, 'exchange', $log->id);
-            $user?->increment('point', $log->point);
+            if ($user) {
+                if ((new PointHistoryController)->create($user->id, $user->point, $log->point, 'exchange', $log->id) > 0) {
+                    $user->increment('point', $log->point);
+                }
+            }
         }
 
         $name = $request->name ? $request->name : "";
