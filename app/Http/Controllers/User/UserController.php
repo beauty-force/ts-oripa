@@ -414,8 +414,9 @@ class UserController extends Controller
                         if ($product->is_lost_product > 0)
                             $product->increment('marks');
                     }
-                    (new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id);
-                    $point = $point + $log->point;
+                    if ((new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id) > 0) {
+                        $point = $point + $log->point;
+                    }
                 }
             }
             $user->update(['point'=>$point]);
@@ -625,8 +626,9 @@ class UserController extends Controller
                         if ($product->is_lost_product > 0)
                             $product->increment('marks');
                     }
-                    (new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id);
-                    $point = $point + $log->point;
+                    if ((new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id) > 0) {
+                        $point = $point + $log->point;
+                    }
                 }
             }
     
@@ -702,8 +704,9 @@ class UserController extends Controller
                 if ($product->is_lost_product > 0)
                     $product->increment('marks');
             }
-            (new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id);
-            $point = $point + $log->point;
+            if ((new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id) > 0) {
+                $point = $point + $log->point;
+            }
         }
         $user->update(['point'=>$point]);
     }

@@ -356,9 +356,10 @@ class PaymentController extends Controller
                     
                     $coupon_record?->update(['status' => 1]);
 
-                    (new PointHistoryController)->create($user->id, $user->point, $pt_amount, 'purchase', $payment->id);
+                    if ((new PointHistoryController)->create($user->id, $user->point, $pt_amount, 'purchase', $payment->id) > 0) {
+                        $user->increment('point', $pt_amount);
+                    }
                     
-                    $user->increment('point', $pt_amount);
                 }
             }
 
