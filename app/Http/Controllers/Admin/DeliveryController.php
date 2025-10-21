@@ -61,22 +61,23 @@ class DeliveryController extends Controller
     }
 
     public function acquired (Request $request) {
-        $logs = Product_log::where('status', 1)->whereRaw('updated_at < NOW() - INTERVAL 7 DAY')->get();
-  
-        foreach($logs as $log) {
-            $log->status = 2;
-            $log->save();
-            if ($product = Product::find($log->product_id)) {
-                if ($product->is_lost_product > 0)
-                    $product->increment('marks');
-            }
-            $user = User::find($log->user_id);
-            if ($user) {
-                if ((new PointHistoryController)->create($user->id, $user->point, $log->point, 'exchange', $log->id) > 0) {
+        DB::transaction(function() use ($request) {
+            $logs = Product_log::where('status', 1)->whereRaw('updated_at < NOW() - INTERVAL 7 DAY')->lockForUpdate()->get();
+    
+            foreach($logs as $log) {
+                $log->status = 2;
+                if ($product = Product::find($log->product_id)) {
+                    if ($product->is_lost_product > 0)
+                        $product->increment('marks');
+                }
+                $user = User::find($log->user_id);
+                if ($user) {
+                    (new PointHistoryController)->create($user->id, $user->point, $log->point, 'exchange', $log->id);
                     $user->increment('point', $log->point);
                 }
+                $log->save();
             }
-        }
+        });
 
         $name = $request->name ? $request->name : "";
 

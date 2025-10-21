@@ -396,13 +396,8 @@ class UserController extends Controller
         $token = $request->token;
         $checks = $request->checks;
         $user = auth()->user();
-        $userLock = Cache::lock('startGacha'.$user->id, 60);
-
-        if (!$userLock->get()) {
-            return redirect()->route('main'); 
-        }
-        try {
-            $logs = Product_log::where('gacha_record_id', $token)->where('user_id', $user->id)->where('status', 1)->get();
+        DB::transaction(function() use ($user, $token, $checks) {
+            $logs = Product_log::where('gacha_record_id', $token)->where('user_id', $user->id)->where('status', 1)->lockForUpdate()->get();
     
             $point = $user->point;
             foreach($logs as $log) {
@@ -414,16 +409,13 @@ class UserController extends Controller
                         if ($product->is_lost_product > 0)
                             $product->increment('marks');
                     }
-                    if ((new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id) > 0) {
-                        $point = $point + $log->point;
-                    }
+                    (new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id);
+                    $point = $point + $log->point;
                 }
             }
             $user->update(['point'=>$point]);
-            return redirect()->route('user.gacha.end', ['token'=>$token]);
-        } finally {
-            $userLock?->release();
-        }
+        });
+        return redirect()->route('user.gacha.end', ['token'=>$token]);
     }
 
     public function result_deliver(Request $request) {
@@ -609,11 +601,7 @@ class UserController extends Controller
     public function product_point_exchange(Request $request) {
         $checks = $request->checks;
         $user = auth()->user();
-        $userLock = Cache::lock('startGacha'.$user->id, 60);
-        if (!$userLock->get()) {
-            return redirect()->route('user.products'); 
-        }
-        try {
+        DB::transaction(function() use ($user, $checks) {
             $logs = Product_log::where('user_id', $user->id)->where('status', 1)->lockForUpdate()->get();
         
             $point = $user->point;
@@ -626,18 +614,13 @@ class UserController extends Controller
                         if ($product->is_lost_product > 0)
                             $product->increment('marks');
                     }
-                    if ((new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id) > 0) {
-                        $point = $point + $log->point;
-                    }
+                    (new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id);
+                    $point = $point + $log->point;
                 }
             }
-    
             $user->update(['point'=>$point]);
-    
-            return redirect()->back()->with('message', '変換しました！')->with('title', 'ポイント変換')->with('type', 'dialog')->with('data', ['user' => $user]);
-        } finally {
-            $userLock?->release();
-        }
+        });
+        return redirect()->back()->with('message', '変換しました！')->with('title', 'ポイント変換')->with('type', 'dialog')->with('data', ['user' => $user]);
     }
 
     public function product_delivery_post(Request $request) {
@@ -694,21 +677,26 @@ class UserController extends Controller
     }
 
     public function auto_product_point_exchange($user) {
-        $logs = Product_log::where('user_id', $user->id)->where('status', 1)->whereRaw('updated_at < NOW() - INTERVAL 7 DAY')->get();
-  
-        $point = $user->point;
-        foreach($logs as $log) {
-            $log->status = 2;
-            $log->save();
-            if ($product = Product::find($log->product_id)) {
-                if ($product->is_lost_product > 0)
-                    $product->increment('marks');
-            }
-            if ((new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id) > 0) {
+        DB::transaction(function() use ($user) {
+            $logs = Product_log::where('user_id', $user->id)
+                ->where('status', 1)
+                ->whereRaw('updated_at < NOW() - INTERVAL 7 DAY')
+                ->lockForUpdate()
+                ->get();
+      
+            $point = $user->point;
+            foreach($logs as $log) {
+                $log->status = 2;
+                $log->save();
+                if ($product = Product::find($log->product_id)) {
+                    if ($product->is_lost_product > 0)
+                        $product->increment('marks');
+                }
+                (new PointHistoryController)->create($user->id, $point, $log->point, 'exchange', $log->id);
                 $point = $point + $log->point;
             }
-        }
-        $user->update(['point'=>$point]);
+            $user->update(['point'=>$point]);
+        });
     }
 
     public function dp_detail($id) {
