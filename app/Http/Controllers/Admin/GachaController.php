@@ -363,6 +363,7 @@ class GachaController extends Controller
             'last_image' => 'required|image|max:4096',
             'gacha_id' => 'required',
             'rank' => 'required',
+            'cost_price' => 'nullable|numeric',
         ];
         if ($request->is_update==1) {
             if(!$request->last_image){
@@ -383,6 +384,7 @@ class GachaController extends Controller
             'is_last' => 0,
             'rank' => $request->rank,
             'category_id' => $request->category_id,
+            'cost_price' => $request->cost_price ?? 0,
         ];
         if($request->last_image){
             $image = saveImage('images/products', $request->file('last_image'), false);
