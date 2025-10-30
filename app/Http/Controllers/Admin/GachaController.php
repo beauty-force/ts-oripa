@@ -437,9 +437,12 @@ class GachaController extends Controller
         $gacha->gacha_limit = $request->to_status;
         $gacha->save();
 
-        $string = "1日1回制限設定をキャンセルしました。";
-        if ($request->to_status) {
+        $string = "1日制限設定をキャンセルしました。";
+        if ($request->to_status == 1) {
             $string = "1日1回制限設定を完了しました。";
+        }
+        else if ($request->to_status == 2) {
+            $string = "1回または10連制限設定を完了しました。";
         }
         return redirect()->back()->with('message', $string)->with('type', 'dialog');
     }

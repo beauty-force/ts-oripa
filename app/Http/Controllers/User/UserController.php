@@ -291,6 +291,22 @@ class UserController extends Controller
                 }
             }
             
+            if ($status == 2) {
+                if ($number > 10) {
+                    $message = '1回または10連ボタンを1回だけ押すことができます。';
+                    return redirect()->back()->with('message', $message)->with('title', '1日制限のガチャ')->with('type', 'dialog');
+                }
+                $last = Gacha_record::where('user_id', $user->id)->where('gacha_id', $id)->where('status', 1)->latest()->first();
+                if ($last) {
+                    $now = $this->get_period_day(date('Y-m-d H:i:s'));
+                    $record = $this->get_period_day($last->updated_at);
+                    if ($now == $record) {
+                        $message = '1回または10連ボタンを1回だけ押すことができます。';
+                        return redirect()->back()->with('message', $message)->with('title', '1日制限のガチャ')->with('type', 'dialog');
+                    }
+                }
+            }
+
             $gacha_point = $gacha->point * $number;
             $user_point = $user->point;
             if ($user_point< $gacha_point) {
