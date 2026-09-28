@@ -34,5 +34,4 @@ yarn-error.log
 /*.bat
 
 /.env
-/resources/js
 /test.ts-oripa.com
